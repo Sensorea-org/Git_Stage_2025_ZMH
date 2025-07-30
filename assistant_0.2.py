@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import json
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import datetime
+
 def degres_heure_glissants(temperatures, t_base=15.0):
     dh_glissant = sum(t_base - t for t in temperatures)
     return dh_glissant

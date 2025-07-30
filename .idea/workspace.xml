@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f574403e-eee4-4271-9aa0-957cb83d1dd1" name="Changes" comment="Merge branch 'master' of https://github.com/zaurdar/Git_Stage_2025_ZMH&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change afterPath="$PROJECT_DIR$/data_recup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_assistant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autotraining_tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_recup.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_recup.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assistant_0.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/assistant_0.2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele_multioutput.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/modele_multioutput.pkl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.app_assistant.executor": "Run",
+    "Python.autotraining_tree.executor": "Run",
     "Python.data_recup.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -96,5 +100,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Git_Stage_2025_ZMH$data_recup.coverage" NAME="data_recup Coverage Results" MODIFIED="1753859234259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Git_Stage_2025_ZMH$app_assistant.coverage" NAME="app_assistant Coverage Results" MODIFIED="1753861280136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Git_Stage_2025_ZMH$autotraining_tree.coverage" NAME="autotraining_tree Coverage Results" MODIFIED="1753859977799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
