@@ -1,14 +1,11 @@
 import streamlit as st
 import torch
-import torch.nn as nn
 import pandas as pd
 import numpy as np
 import joblib
 from sklearn.tree import plot_tree
 import matplotlib.pyplot as plt
 import json
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import datetime
 
 def degres_heure_glissants(temperatures, t_base=15.0):
     dh_glissant = sum(t_base - t for t in temperatures)
@@ -20,17 +17,18 @@ def predict(X,clf):
     y_pred = clf.predict(input)
     return y_pred
 
-clf = joblib.load("C:/Users/hugom/OneDrive/Documents/Stage_2025/dev_Cnn/modele_multioutput.pkl")
+clf = joblib.load("./modele_multioutput.pkl")
 #import data
 test = torch.load('C:/Users/hugom/OneDrive/Documents/Stage_2025/dev_Cnn/dataset/temp.pt',weights_only=False)
 test_past = torch.load('C:/Users/hugom/OneDrive/Documents/Stage_2025/dev_Cnn/dataset/temp_past.pt',weights_only=False)
-test_past_past = torch.load('C:/Users/hugom/OneDrive/Documents/Stage_2025/dev_Cnn/dataset/temp_past_past.pt',weights_only=False)
 #import fichier json
-with open("C:/Users\hugom\OneDrive\Documents\Stage_2025\data/trends.json", "r") as f:
+with open("./data/trends.json", "r") as f:
     data_loaded = json.load(f)
 trends = {'occupation_list':data_loaded['occupation_list'],
           'water consumption':data_loaded['water consumption'],
           'electricity consumption':data_loaded['electricity consumption']}
+
+
 dj = data_loaded["dj"]
 temp = data_loaded["temp_ext"]
 data = np.array(data_loaded["commandes"])
@@ -102,12 +100,12 @@ for i in range(20):
     cmd_labels.append("gas consumption")
 
 
-st.image("C:/Users/hugom/OneDrive/Documents/Stage_2025/img.jpg")
+st.image("./acceuil.jpg")
 page1, page2, page3 = st.tabs(["Trends","Prediction","Assistant"])
 init = True
 
 with page3:
-    with open("C:/Users\hugom\OneDrive\Documents\Stage_2025\data/assistant.json", "r") as f:
+    with open("./data/assistant.json", "r") as f:
         data_loaded = json.load(f)
     st.write(data_loaded[530:])
 with page1:
