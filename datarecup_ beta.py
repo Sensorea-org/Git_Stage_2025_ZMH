@@ -197,7 +197,7 @@ while True:
         writing_trends(data)
         #rajout de l'échantillon dans la base de donnée
         path = readandwrite(dataset=dataset)
-        #ligne à commenter si on veut vraiment rajouter 
+        #ligne à commenter si on veut vraiment rajouter
         os.remove(path + ".pt")
     t2b = datetime.datetime.today().hour
     if t2b!=t1b:

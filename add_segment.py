@@ -54,7 +54,6 @@ def search_sim(input,dataset,threshold):
             else:
                 a.append(dataset[i].getdata()[j])
                 b.append(input.getdata()[j])
-        print(a)
         a = np.array(a)
         b = np.array(b)
 
