@@ -1,10 +1,53 @@
 import time
 import datetime
+from datetime import datetime as dt
 from datetime import timedelta
+
 import json
 import BAC0
 import torch
 import numpy as np
+import os
+from add_segment import segment,search_sim,savefile,readandwrite
+
+pw = 19
+fw = 1
+
+root = "./dataset/"
+dataset = []
+for dirpath, dirnames, filenames in os.walk(root):
+    for filename in filenames:
+        if filename.endswith(".pt"):
+
+                path = root + "/" + filename
+                print(path)
+                t = filename
+                date = t[:8]
+                date = date.replace("_", "-")
+                heure = t[8:-3]
+                heure = heure.replace("_", ":")
+                t = dt.strptime(date+" "+heure, "%d-%m-%y %H:%M:%S")
+
+                time_w = []
+                delta = timedelta(days=0, hours=0, minutes=15, seconds=0)
+                for i in range(pw+fw,0,-1):
+                    time_w.append(t-i*delta)
+                print(time_w[pw])
+                data = torch.load(path,weights_only=False)
+                input_array = data["input"]
+                print(np.shape(input_array))
+                input = input_array.reshape(-1)
+                input = input.numpy()
+                target = data["output"]
+                target = target.numpy()
+                cmd = np.reshape(input[0:240],(pw+fw,12))
+                temp_ext = list(input[241:261])
+                w_cons = input[261]
+                time = input[262]
+                gaz_cons = list(input[263:])
+                seg = segment(cmd,temp_ext,time_w,w_cons,gaz_cons,pw)
+                dataset.append(seg)
+print(np.shape(dataset))
 
 def writing_trends(data):
     print("writting...✒️")
@@ -110,8 +153,8 @@ while True:
     if len(cmds_list)<w:
         while (len(cmds_list)<w):
             cmds_list = get_cmds(cmds_list)
-    if len(occupation_list)<(2*w):
-        while (len(occupation_list)<(2*w)):
+    if len(occupation_list)<(2*w+1):
+        while (len(occupation_list)<(2*w+1)):
             occupation_list = get_occupation(occupation_list)
     if len(temp_list)<w:
         while (len(temp_list)<w):
@@ -152,6 +195,10 @@ while True:
         occupation_list = get_occupation(occupation_list)
         data['occupation_list'] = occupation_list
         writing_trends(data)
+        #rajout de l'échantillon dans la base de donnée
+        path = readandwrite(dataset=dataset)
+        #ligne à commenter si on veut vraiment rajouter 
+        os.remove(path + ".pt")
     t2b = datetime.datetime.today().hour
     if t2b!=t1b:
         print("here i m")

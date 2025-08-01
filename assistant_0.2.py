@@ -39,6 +39,12 @@ for i in range(1,len(conso_gaz),1):
 conso_water = np.zeros(len(data_loaded["water consumption"])-1)
 for i in range(1,len(conso_water),1):
     conso_water[i]=data_loaded["water consumption"][i]-data_loaded["water consumption"][i-1]
+
+conso_elec = np.zeros(len(data_loaded['electricity consumption'])-1)
+for i in range(1,len(conso_water),1):
+    conso_elec[i]=data_loaded['electricity consumption'][i]-data_loaded['electricity consumption'][i-1]
+
+
 t = data_loaded["time"]
 data.append(conso_gaz[pw])
 for i in temp:
@@ -97,18 +103,33 @@ d_gaz = pd.DataFrame({
     "y (past)":y_p
 })
 #dico data water
+
 conso_p = np.array(conso_water[:pw+fw])
 conso = np.array(conso_water[pw+fw:])
 
 occ_data = data_loaded["occupation_list"]
+st.write(len(conso_water))
+st.write(len(occ_data))
 occ_p = occ_data[pw+fw:]
 occ = occ_data[:pw+fw]
 y_inter, y_p,aw,bw,a_pw,b_pw = mk_trend(conso,conso_p,occ,occ_p)
 d_water = pd.DataFrame({
-    "x": occ[pw+fw:],
-    "y (données)": c,
+    "x": occ,
+    "y (données)": conso,
     "y (interpolée)": y_inter,
-    "y (past données ) ": c_p,
+    "y (past données ) ": conso_p,
+    "y (past)":y_p
+})
+#conso elec
+conso_p = np.array(conso_elec[:pw+fw])
+conso = np.array(conso_elec[pw+fw:])
+
+y_inter, y_p,ae,be,a_pe,b_pe = mk_trend(conso,conso_p,occ,occ_p)
+d_elec = pd.DataFrame({
+    "x": occ,
+    "y (données)": conso,
+    "y (interpolée)": y_inter,
+    "y (past données ) ": conso_p,
     "y (past)":y_p
 })
 #création des labels de commandes
@@ -163,10 +184,10 @@ with page1:
     with col3:
         st.subheader("trend : electricity consumption")
         tab1, tab2 = st.tabs(["Chart", "Dataframe"])
-        tab1.line_chart(d_gaz.set_index("x"), height=250)
-        tab2.dataframe(d_gaz, height=250, use_container_width=True)
-        st.write(f"trend actuelle: y = {ag:.2f}x + {bg:.2f}")
-        st.write(f"trend passée: y = {a_pg:.2f}x + {b_pg:.2f}")
+        tab1.line_chart(d_elec.set_index("x"), height=250)
+        tab2.dataframe(d_elec, height=250, use_container_width=True)
+        st.write(f"trend actuelle: y = {ae:.2f}x + {be:.2f}")
+        st.write(f"trend passée: y = {a_pe:.2f}x + {b_pe:.2f}")
 with page2:
     st.header("Decision Trees")
     col1, col2 = st.columns(2)
