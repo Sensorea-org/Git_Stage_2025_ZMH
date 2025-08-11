@@ -41,8 +41,8 @@ for i in range(1,len(conso_water),1):
     conso_water[i]=data_loaded["water consumption"][i]-data_loaded["water consumption"][i-1]
 
 conso_elec = np.zeros(len(data_loaded['electricity consumption'])-1)
-for i in range(1,len(conso_water),1):
-    conso_elec[i]=data_loaded['electricity consumption'][i]-data_loaded['electricity consumption'][i-1]
+for i in range(1,len(conso_elec),1):
+    conso_elec[i]=(data_loaded['electricity consumption'][i]-data_loaded['electricity consumption'][i-1])/1000
 
 
 t = data_loaded["time"]
@@ -84,7 +84,6 @@ def mk_trend(c,c_p,x,x_p):
     a,b = coeffs
     y_inter = np.zeros(len(x))
     #interpolation passsé
-
     coeffs_ = np.polyfit(x_p,c_p, deg=1)
     a_p,b_p = coeffs_
     y_p = np.zeros(len(x))
@@ -94,13 +93,13 @@ def mk_trend(c,c_p,x,x_p):
         y_p[i] = a_p * x_p[i] + b_p
     return y_inter, y_p,a,b,a_p,b_p
 #dico data gaz
-y_inter, y_p,ag,bg,a_pg,b_pg = mk_trend(c,c_p,dh,dhp)
+y_interg, y_pg,ag,bg,a_pg,b_pg = mk_trend(c,c_p,dh,dhp)
 d_gaz = pd.DataFrame({
     "x": dh,
     "y (données)": c,
-    "y (interpolée)": y_inter,
+    "y (interpolée)": y_interg,
     "y (past données ) ": c_p,
-    "y (past)":y_p
+    "y (past)":y_pg
 })
 #dico data water
 
@@ -112,25 +111,25 @@ st.write(len(conso_water))
 st.write(len(occ_data))
 occ_p = occ_data[pw+fw:]
 occ = occ_data[:pw+fw]
-y_inter, y_p,aw,bw,a_pw,b_pw = mk_trend(conso,conso_p,occ,occ_p)
+y_interw, y_pw,aw,bw,a_pw,b_pw = mk_trend(conso,conso_p,occ,occ_p)
 d_water = pd.DataFrame({
     "x": occ,
     "y (données)": conso,
-    "y (interpolée)": y_inter,
+    "y (interpolée)": y_interw,
     "y (past données ) ": conso_p,
-    "y (past)":y_p
+    "y (past)":y_pw
 })
 #conso elec
 conso_p = np.array(conso_elec[:pw+fw])
 conso = np.array(conso_elec[pw+fw:])
 
-y_inter, y_p,ae,be,a_pe,b_pe = mk_trend(conso,conso_p,occ,occ_p)
+y_intere, y_pe,ae,be,a_pe,b_pe = mk_trend(conso,conso_p,occ,occ_p)
 d_elec = pd.DataFrame({
     "x": occ,
     "y (données)": conso,
-    "y (interpolée)": y_inter,
+    "y (interpolée)": y_intere,
     "y (past données ) ": conso_p,
-    "y (past)":y_p
+    "y (past)":y_pe
 })
 #création des labels de commandes
 cmd_labels = []

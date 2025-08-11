@@ -8,46 +8,63 @@ import BAC0
 import torch
 import numpy as np
 import os
+import joblib
 from add_segment import segment,search_sim,savefile,readandwrite
 
+def predict(X,clf):
+    input = X
+    input = input.reshape(1, -1)
+    y_pred = clf.predict(input)
+    return y_pred
+
+clf = joblib.load("./modele_multioutput.pkl")
+
+def readandwrite_model(model,path ="./data/trends.json",pw=19,fw=1):
+    with open(path, "r") as f:
+        data_loaded = json.load(f)
+    temp = data_loaded["temp_ext"]
+    data = np.array(data_loaded["commandes"])
+    data = list(data.reshape(-1))
+
+    #prediction creation du segment actuellement hybride pcq on a pas les conso mais il manque que ça
+
+    conso_gaz = np.zeros(len(data_loaded["gaz consumption"])-1)
+    for i in range(1,len(conso_gaz),1):
+        conso_gaz[i]=(data_loaded["gaz consumption"][i]-data_loaded["gaz consumption"][i-1])/10
+
+    conso_water = np.zeros(len(data_loaded["water consumption"])-1)
+    for i in range(1,len(conso_water),1):
+        conso_water[i]=(data_loaded["water consumption"][i]-data_loaded["water consumption"][i-1])/10
+
+
+    data.append(conso_gaz[pw])
+    for i in temp:
+        data.append(i)
+
+    data.append(conso_water[-1])
+    t = dt.today()
+    data.append(t.hour)
+    for i in conso_gaz[pw+fw:]:
+        data.append(i)
+
+    X = np.array(data)
+    y_pred = predict(X, clf)
+    time_w = []
+    delta = timedelta(days=0, hours=0, minutes=15, seconds=0)
+    for i in range(pw + fw, 0, -1):
+        time_w.append(t - i * delta)
+    cmd = np.reshape(X[0:240], (pw + fw, 12))
+    temp_ext = list(X[241:261])
+    w_cons = X[261]
+    gaz_cons = X[263:]
+    seg = segment(cmd, temp_ext, time_w, w_cons, gaz_cons, pw)
+    path = savefile(seg,y_pred,pw)
+    return path
 pw = 19
 fw = 1
 
 root = "./dataset/"
-dataset = []
-for dirpath, dirnames, filenames in os.walk(root):
-    for filename in filenames:
-        if filename.endswith(".pt"):
 
-                path = root + "/" + filename
-                print(path)
-                t = filename
-                date = t[:8]
-                date = date.replace("_", "-")
-                heure = t[8:-3]
-                heure = heure.replace("_", ":")
-                t = dt.strptime(date+" "+heure, "%d-%m-%y %H:%M:%S")
-
-                time_w = []
-                delta = timedelta(days=0, hours=0, minutes=15, seconds=0)
-                for i in range(pw+fw,0,-1):
-                    time_w.append(t-i*delta)
-                print(time_w[pw])
-                data = torch.load(path,weights_only=False)
-                input_array = data["input"]
-                print(np.shape(input_array))
-                input = input_array.reshape(-1)
-                input = input.numpy()
-                target = data["output"]
-                target = target.numpy()
-                cmd = np.reshape(input[0:240],(pw+fw,12))
-                temp_ext = list(input[241:261])
-                w_cons = input[261]
-                time = input[262]
-                gaz_cons = list(input[263:])
-                seg = segment(cmd,temp_ext,time_w,w_cons,gaz_cons,pw)
-                dataset.append(seg)
-print(np.shape(dataset))
 
 def writing_trends(data):
     print("writting...✒️")
@@ -75,22 +92,43 @@ def get_cmds(cmds):
     cmds.append(temp)
     return cmds
 def get_gaz_conso(gaz):
-    test = torch.load('C:/Users/hugom/OneDrive/Documents/Stage_2025/dev_Cnn/dataset/temp.pt', weights_only=False)
-    X = test['input']
-    X = X.reshape(-1)
-    X = list(X)
-    conso = X[282]
-    conso_list = conso.item()
-    print(conso_list)
-    gaz.append(conso_list)
+    ES_2807664 = BAC0.device('192.168.1.101', 2807664, bacnet)
+    objects = ES_2807664.points
+    for i in objects:
+        if "ES_2807664/gaz_conso" in str(i):
+            t = str(i)
+            print(t)
+            t = t.split(" ")
+            temp = float(t[2])
+            gaz.append(temp)
+            break
     return gaz
 def get_water_conso(water):
-    test = torch.load('C:/Users/hugom/OneDrive/Documents/Stage_2025/dev_Cnn/dataset/temp.pt', weights_only=False)
-    X = test['input']
-    X = X.reshape(-1)
-    X = list(X)
-    water.append(X[261].item())
+    ES_2807664 = BAC0.device('192.168.1.101', 2807664, bacnet)
+    objects = ES_2807664.points
+    for i in objects:
+        print(i)
+        if "ES_2807664/water_conso" in str(i):
+            t = str(i)
+            print(t)
+            t = t.split(" ")
+            temp = float(t[2])
+            water.append(temp)
+            break
     return water
+def get_elec_conso(elec):
+    ES_2807664 = BAC0.device('192.168.1.101', 2807664, bacnet)
+    objects = ES_2807664.points
+    for i in objects:
+        print(i)
+        if "ES_2807664/elec_conso" in str(i):
+            t = str(i)
+            print(t)
+            t = t.split(" ")
+            temp = float(t[2])
+            elec.append(temp)
+            break
+    return elec
 def get_time():
     return datetime.datetime.now().hour
 def get_occupation(occupation_list):
@@ -123,13 +161,378 @@ def write(val):
     ES_2807664['degré jour']=val
 
 
-elec = []
+elec = [
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0,
+        26395371520.0
+    ]
 
 
 
 dj_list = [-20.0, -13.333333333333334, -10.0, -8.0, -6.666666666666667, -5.714285714285714, -5.0, -4.444444444444445, -4.0, -42.0]
-cmds_list = []
-water = []
+cmds_list = [
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+        ]
+    ]
+water = [
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0,
+        544500.0
+    ]
 gaz = [40.62, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86]
 temp_list=[17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0]
 occupation_list = [40.62, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86]
@@ -153,8 +556,8 @@ while True:
     if len(cmds_list)<w:
         while (len(cmds_list)<w):
             cmds_list = get_cmds(cmds_list)
-    if len(occupation_list)<(2*w+1):
-        while (len(occupation_list)<(2*w+1)):
+    if len(occupation_list)<(2*w):
+        while (len(occupation_list)<(2*w)):
             occupation_list = get_occupation(occupation_list)
     if len(temp_list)<w:
         while (len(temp_list)<w):
@@ -162,6 +565,9 @@ while True:
     if len(gaz)<(2*w+1):
         while (len(gaz)<(2*w+1)):
             gaz = get_gaz_conso(gaz)
+    if len(elec)<(2*w+1):
+        while (len(elec)<(2*w+1)):
+            elec = get_elec_conso(elec)
     if len(water)<(2*w+1):
         while (len(water)<(2*w+1)):
             water = get_water_conso(water)
@@ -174,6 +580,10 @@ while True:
         gaz = gaz[1:]
         gaz = get_gaz_conso(gaz)
         data['gaz consumption'] = gaz
+        #ajout conso elec
+        elec = elec[1:]
+        elec = get_elec_conso(elec)
+        data['electricity consumption'] = elec
         # ajout conso water
         water = water[1:]
         water = get_water_conso(water)
@@ -196,9 +606,10 @@ while True:
         data['occupation_list'] = occupation_list
         writing_trends(data)
         #rajout de l'échantillon dans la base de donnée
-        path = readandwrite(dataset=dataset)
+        path = readandwrite_model(clf)
         #ligne à commenter si on veut vraiment rajouter
         os.remove(path + ".pt")
+
     t2b = datetime.datetime.today().hour
     if t2b!=t1b:
         print("here i m")
@@ -208,7 +619,7 @@ while True:
         t1b = datetime.datetime.today().hour
         dj = degres_heure_glissants(temp_list)
         dj_list = dj_list[1:]
-        dj_list.append(dj)
+        dj_list.append(dj/4)
         print(dj_list)
         data['dj'] = dj_list
         writing_trends(data)

@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f574403e-eee4-4271-9aa0-957cb83d1dd1" name="Changes" comment="Merge branch 'master' of https://github.com/zaurdar/Git_Stage_2025_ZMH&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_segment.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_segment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_segment.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/add_segment.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assistant_0.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/assistant_0.2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trends.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/trends.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_recup.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_recup.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datarecup_ beta.py" beforeDir="false" afterPath="$PROJECT_DIR$/datarecup_ beta.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,28 +48,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.add_segment.executor": "Run",
-    "Python.app_assistant.executor": "Run",
-    "Python.autotraining_tree.executor": "Run",
-    "Python.data_recup.executor": "Run",
-    "Python.datarecup_ beta.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.add_segment.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app_assistant.executor&quot;: &quot;Run&quot;,
+    &quot;Python.autotraining_tree.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_recup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.datarecup_ beta.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
         <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
       </set>
     </attachedChunks>
@@ -80,7 +82,8 @@
       <updated>1753781978257</updated>
       <workItem from="1753781979302" duration="1000" />
       <workItem from="1753948802939" duration="30222000" />
-      <workItem from="1754054412727" duration="4046000" />
+      <workItem from="1754054412727" duration="5171000" />
+      <workItem from="1754895557325" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/zaurdar/Git_Stage_2025_ZMH&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <option name="closed" value="true" />
@@ -119,7 +122,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Git_Stage_2025_ZMH$data_recup.coverage" NAME="data_recup Coverage Results" MODIFIED="1753859234259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Git_Stage_2025_ZMH$app_assistant.coverage" NAME="app_assistant Coverage Results" MODIFIED="1754033161064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Git_Stage_2025_ZMH$datarecup__beta.coverage" NAME="datarecup_ beta Coverage Results" MODIFIED="1754058592900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Git_Stage_2025_ZMH$datarecup__beta.coverage" NAME="datarecup_ beta Coverage Results" MODIFIED="1754058816863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Git_Stage_2025_ZMH$add_segment.coverage" NAME="add_segment Coverage Results" MODIFIED="1754058270510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Git_Stage_2025_ZMH$autotraining_tree.coverage" NAME="autotraining_tree Coverage Results" MODIFIED="1753859977799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
