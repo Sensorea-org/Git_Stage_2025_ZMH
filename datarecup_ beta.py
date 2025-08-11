@@ -10,6 +10,7 @@ import numpy as np
 import os
 import joblib
 from add_segment import segment,search_sim,savefile,readandwrite
+from autotraining_tree import train
 
 def predict(X,clf):
     input = X
@@ -49,6 +50,13 @@ def readandwrite_model(model,path ="./data/trends.json",pw=19,fw=1):
 
     X = np.array(data)
     y_pred = predict(X, clf)
+
+    val_analogique = 0
+    for i in range(len(y_pred[0])):
+        print(i)
+        val_analogique += y_pred[0][i] * (2 ** i)
+    write(val_analogique)
+    print(val_analogique)
     time_w = []
     delta = timedelta(days=0, hours=0, minutes=15, seconds=0)
     for i in range(pw + fw, 0, -1):
@@ -78,7 +86,11 @@ def writing_trends(data):
 
 
 bacnet = BAC0.connect('172.21.212.141')
+BAC0.log_level("silence")
 w = 20
+def write(val):
+    ES_2807664 = BAC0.device('192.168.1.101', 2807664, bacnet)
+    ES_2807664['output_model_bin']=val
 
 def get_cmds(cmds):
     chaufferie = BAC0.device('192.168.1.17',2886551,bacnet) #RPC_March 1.7.1 ; AS-27-2 BACnet Interface 2020 Saison 2
@@ -89,7 +101,15 @@ def get_cmds(cmds):
         t = t.split(" ")
         cmd = t[2] in ["True", "true"]
         temp.append(int(cmd))
+    tempb = []
+    for i in temp[2:-1]:
+        tempb.append(i)
+    for i in temp[:2]:
+        tempb.append(i)
+    tempb.append(temp[-1])
+
     cmds.append(temp)
+
     return cmds
 def get_gaz_conso(gaz):
     ES_2807664 = BAC0.device('192.168.1.101', 2807664, bacnet)
@@ -156,9 +176,10 @@ def get_temp(temp_list):
 def degres_heure_glissants(temperatures, t_base=15.0):
     dh_glissant = sum(t_base - t for t in temperatures)
     return dh_glissant
-def write(val):
+
+def check_train():
     ES_2807664 = BAC0.device('192.168.1.101', 2807664, bacnet)
-    ES_2807664['degré jour']=val
+    return ES_2807664["train"]
 
 
 elec = [
@@ -538,7 +559,7 @@ temp_list=[17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.0, 17.
 occupation_list = [40.62, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86, 40.86]
 
 t = 25
-min = timedelta(days=0, hours=0, minutes=0, seconds=1)
+min = timedelta(days=0, hours=0, minutes=3, seconds=0)
 t1 = datetime.datetime.today()
 t1b = datetime.datetime.today().hour-1
 data = {"occupation_list":occupation_list,
@@ -623,3 +644,5 @@ while True:
         print(dj_list)
         data['dj'] = dj_list
         writing_trends(data)
+    if check_train()==True:
+        train()

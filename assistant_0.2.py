@@ -109,8 +109,8 @@ conso = np.array(conso_water[pw+fw:])
 occ_data = data_loaded["occupation_list"]
 st.write(len(conso_water))
 st.write(len(occ_data))
-occ_p = occ_data[pw+fw:]
-occ = occ_data[:pw+fw]
+occ_p = occ_data[:pw+fw]
+occ = occ_data[pw+fw:]
 y_interw, y_pw,aw,bw,a_pw,b_pw = mk_trend(conso,conso_p,occ,occ_p)
 d_water = pd.DataFrame({
     "x": occ,
@@ -124,6 +124,7 @@ conso_p = np.array(conso_elec[:pw+fw])
 conso = np.array(conso_elec[pw+fw:])
 
 y_intere, y_pe,ae,be,a_pe,b_pe = mk_trend(conso,conso_p,occ,occ_p)
+st.write(occ)
 d_elec = pd.DataFrame({
     "x": occ,
     "y (données)": conso,
