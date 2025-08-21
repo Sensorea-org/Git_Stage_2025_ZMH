@@ -18,7 +18,7 @@ def predict(X,clf):
     y_pred = clf.predict(input)
     return y_pred
 
-clf = joblib.load("./modele_multioutput.pkl")
+clf = joblib.load("./modele_multioutput_regression.pkl")
 
 def readandwrite_model(model,path ="./data/trends.json",pw=19,fw=1):
     with open(path, "r") as f:
@@ -95,21 +95,53 @@ def write(val):
 def get_cmds(cmds):
     chaufferie = BAC0.device('192.168.1.17',2886551,bacnet) #RPC_March 1.7.1 ; AS-27-2 BACnet Interface 2020 Saison 2
     objects = chaufferie.points
-    temp = []
     for i in objects:
-        t = str(i)
+        print(i)
+    temp = []
+    temp.append(chaufferie['+2 return temp'])
+    temp.append(chaufferie['+2 supply temp'])
+    temp.append(chaufferie['+27 return temp'])
+    temp.append(chaufferie['+27 supply temp'])
+    temp.append(chaufferie['-4 return temp'])
+    temp.append(chaufferie['-4 supply temp'])
+    temp.append(chaufferie['boiler 1'])
+    temp.append(chaufferie['boiler 2'])
+    temp.append(chaufferie['boiler 3'])
+    temp.append(chaufferie['cogen return temp'])
+    temp.append(chaufferie['cogen supply temp'])
+
+    temp.append(chaufferie['-4 pmpA mod'])
+    temp.append(chaufferie['-4 pmpB mod'])
+    temp.append(chaufferie['2 pmpA mod'])
+    temp.append(chaufferie['2 pmpB mod'])
+    temp.append(chaufferie['1 pmpA mod'])
+    temp.append(chaufferie['1 pmpB mod'])
+    temp.append(chaufferie['boiler1 mod'])
+    temp.append(chaufferie['boiler2 mod'])
+    temp.append(chaufferie['boiler3 mod'])
+    cmd = []
+    for i in range(0,len(temp)-9,1):
+        t = str(temp[i])
+        print(t)
+        t = t.split(":")
+        t = t[1]
         t = t.split(" ")
-        cmd = t[2] in ["True", "true"]
-        temp.append(int(cmd))
-    tempb = []
-    for i in temp[2:-1]:
-        tempb.append(i)
-    for i in temp[:2]:
-        tempb.append(i)
-    tempb.append(temp[-1])
-
-    cmds.append(temp)
-
+        t = float(t[1])
+        cmd.append(t)
+    tmp = []
+    for i in range(len(temp)-9,len(temp),1):
+        t = str(temp[i])
+        print(t)
+        t = t.split(":")
+        t = t[1]
+        t = t.split(" ")
+        t = float(t[1])
+        tmp.append(t)
+    cmd.append((tmp[0]+tmp[1])/100)
+    cmd.append((tmp[2]+tmp[3])/100)
+    cmd.append((tmp[4]+tmp[5])/100)
+    cmd.append((tmp[6]+tmp[7]+tmp[8])/300)
+    cmds.append(cmd)
     return cmds
 def get_gaz_conso(gaz):
     ES_2807664 = BAC0.device('192.168.1.101', 2807664, bacnet)

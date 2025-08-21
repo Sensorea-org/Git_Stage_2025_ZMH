@@ -17,13 +17,18 @@ def degres_heure_glissants(temperatures, t_base=15.0):
     dh_glissant = sum(t_base - t for t in temperatures)
     return dh_glissant
 #prediction en arbre
-def predict(X,clf):
+def predict_classification(X,clf):
     input = X
     input = input.reshape(1, -1)
     y_pred = clf.predict(input)
     return y_pred
 
-clf = joblib.load("./modele_multioutput.pkl")
+def predict_reg(X,reg):
+    input = X.reshape(1, -1)
+    y_pred = reg.predict(input)
+    return y_pred
+clf = joblib.load("./modele_multioutput_classification.pkl")
+reg = joblib.load("./modele_multioutput_regression.pkl")
 #import fichier json
 with open("./data/trends.json", "r") as f:
     data_loaded = json.load(f)
@@ -61,10 +66,10 @@ for i in conso_gaz[pw+fw:]:
     data.append(i)
 
 X = np.array(data)
-y_pred = predict(X,clf)
-feature_names = np.linspace(0,282,283)
-class_labels = ["Distribution__Ht_+2_Pmp2A",  "Distribution__Ht_+2_Pmp2B",  "Distribution__Ht_+27_Pmp1A",  "Distribution__Ht_+27_Pmp1B", "Distribution__Ht_-4_Pmp3A","Distribution__Ht_-4_Pmp3B","Distribution__Ht_Rad_Pmp1","Distribution__Ht_Rad_Pmp2","Production_Boiler1","Production_Boiler2","Production_Boiler3","Production_cogen"]#trends
-
+y_pred_class = predict_classification(X,clf)
+y_pred_regression = predict_reg(X,reg)
+feature_names = np.linspace(0,342,343)
+class_labels = ["pompe -4 mod","pompe +2 mod","pompe +27 mod","boilers mod"]
 conso_p = np.array(conso_gaz[:pw+fw])
 
 conso = np.array(conso_gaz[pw+fw:])
@@ -100,9 +105,10 @@ def mk_trend(c,c_p,x,x_p):
 y_interg, y_pg,ag,bg,a_pg,b_pg = mk_trend(c,c_p,dh,dhp)
 d_gaz = pd.DataFrame({
     "x": dh,
-    "y (données)": c,
     "y (interpolée)": y_interg,
-    "y (past données ) ": c_p,
+})
+d_gaz_p = pd.DataFrame({
+    "x": dhp,
     "y (past)":y_pg
 })
 #dico data water
@@ -116,9 +122,7 @@ occ = occ_data[pw+fw:]
 y_interw, y_pw,aw,bw,a_pw,b_pw = mk_trend(conso,conso_p,occ,occ_p)
 d_water = pd.DataFrame({
     "x": occ,
-    "y (données)": conso,
     "y (interpolée)": y_interw,
-    "y (past données ) ": conso_p,
     "y (past)":y_pw
 })
 #conso elec
@@ -128,15 +132,13 @@ conso = np.array(conso_elec[pw+fw:])
 y_intere, y_pe,ae,be,a_pe,b_pe = mk_trend(conso,conso_p,occ,occ_p)
 d_elec = pd.DataFrame({
     "x": occ,
-    "y (données)": conso,
     "y (interpolée)": y_intere,
-    "y (past données ) ": conso_p,
     "y (past)":y_pe
 })
 #création des labels de commandes
 cmd_labels = []
-for i in range(240):
-    cmd_labels.append("command")
+for i in range(300):
+    cmd_labels.append("Data")
 cmd_labels.append("gas consumption")
 for i in range(20):
     cmd_labels.append("temperature")
@@ -431,19 +433,15 @@ with page3:
                 assistant_response = main_node.text
             message_placeholder.markdown(assistant_response)
         # Add assistant response to chat history
-
-
-
-
-
 with page1:
     st.header("Trends")
     col1, col2, col3 = st.columns(3)
     with col1:
         st.subheader("trend : gaz consumption")
-        tab1, tab2 = st.tabs(["Chart", "Dataframe"])
+        tab1, tab2,tab3 = st.tabs(["Chart_actual","Chart_past", "Dataframe"])
         tab1.line_chart(d_gaz.set_index("x"), height=250)
-        tab2.dataframe(d_gaz, height=250, use_container_width=True)
+        tab2.line_chart(d_gaz_p.set_index("x"), height=250)
+        tab3.dataframe(d_gaz, height=250, use_container_width=True)
         st.write(f"trend actuelle: y = {ag:.2f}x + {bg:.2f}")
         st.write(f"trend passée: y = {a_pg:.2f}x + {b_pg:.2f}")
         if bg > b_pg:
@@ -463,6 +461,14 @@ with page1:
         tab2.dataframe(d_water, height=250, use_container_width=True)
         st.write(f"actual trend: y = {aw:.2f}x + {bw:.2f}")
         st.write(f"past trend: y = {a_pw:.2f}x + {b_pw:.2f}")
+        if bw > b_pw:
+            st.write("- constant use of water increased -> possible leak")
+        if bw <= b_pw:
+            st.write("- constant use of water decreased 👌")
+        if aw > a_pw:
+            st.write("- normalized consumption increased")
+        if aw <= a_pw:
+            st.write("- normalized consumption decreased")
 
     with col3:
         st.subheader("trend : electricity consumption")
@@ -471,37 +477,43 @@ with page1:
         tab2.dataframe(d_elec, height=250, use_container_width=True)
         st.write(f"trend actuelle: y = {ae:.2f}x + {be:.2f}")
         st.write(f"trend passée: y = {a_pe:.2f}x + {b_pe:.2f}")
+        if be > b_pe:
+            st.write("- constant use of electricity increased")
+        if be <= b_pe:
+            st.write("- constant use of electricity decreased 👌")
+        if ae > a_pe:
+            st.write("- normalized consumption increased")
+        if ae <= a_pe:
+            st.write("- normalized consumption decreased")
 with page2:
     st.header("Decision Trees")
-    col1, col2 = st.columns(2)
-    with col1:
-        st.header("Results")
-        for i in range(len(class_labels)):
-            if y_pred[0][i] == 1:
-                if i == len(class_labels) - 1:
-                    st.write(f"- alright no probs (reference to the model 😹😹)")
-                else:
-                    st.write(f"- 🌡️ dérive de commande pour la {class_labels[i]} ")
-    with col2:
-        cmd_act = X[228:240]
-        dic = pd.DataFrame({
+    st.header("Results")
+    pred_cmd = []
+    pred_freq = []
+    for i in range(len(class_labels)):
+        pred_cmd.append(y_pred_class[0][i])
+        pred_freq.append(y_pred_regression[0][i])
+    cmd_act = X[296:300]
+
+    dic = pd.DataFrame({
             "command": class_labels,
             "cmd actual": cmd_act,
+            "advised cmd": pred_cmd,
+            "advised frequency": pred_freq,
         })
-        st.dataframe(dic, height=250, use_container_width=True)
+    st.dataframe(dic, height=250, use_container_width=True)
 
-    label_index = st.slider("Choisir le label à afficher", 0, len(clf.estimators_) - 1)
+    name = st.radio("Choisir le label à afficher",class_labels)
+    label_index = class_labels.index(name)
     # Chemin de décision
-    tree = clf.estimators_[label_index]
+    tree = reg.estimators_[label_index]
     feat = list(tree.tree_.feature)
     while -2 in feat:
         feat.remove(-2)
 
-
-    fig, ax = plt.subplots(figsize=(12, 6))
-    name = class_labels[label_index]
+    fig, ax = plt.subplots(figsize=(15, 6))
     plot_tree(
-        clf.estimators_[label_index],
+        reg.estimators_[label_index],
         feature_names=feature_names,
         class_names=["off", name],
         filled=True,
