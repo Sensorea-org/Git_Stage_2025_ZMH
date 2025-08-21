@@ -56,7 +56,11 @@ def _main_():
     clf = joblib.load("./modele_multioutput_classification.pkl")
     reg = joblib.load("./modele_multioutput_regression.pkl")
     #import fichier json
-    with open("./data/trends.json", "r") as f:
+    trends_paths = ["THE Hotel"]
+    name = st.radio("Choisir l'hotel à afficher", trends_paths)
+    hotels_paths = ["./data/trends.json"]
+    ind = trends_paths.index(name)
+    with open(hotels_paths[ind], "r") as f:
         data_loaded = json.load(f)
 
 
