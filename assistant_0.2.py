@@ -28,8 +28,7 @@ authenticator = stauth.Authenticate(
     credentials,
     cookie_name="my_app_cookie",
     cookie_key="random_signature_key",
-    cookie_expiry_days=1,
-    auto_hash=True
+    cookie_expiry_days=1
 )
 
 authenticator.login(location="main")
