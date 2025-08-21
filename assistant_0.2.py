@@ -8,10 +8,12 @@ from sklearn.preprocessing import LabelEncoder
 from sentence_transformers import SentenceTransformer
 from graphviz import Digraph
 import streamlit_authenticator as stauth
+
+from collections.abc import Mapping, Sequence
 pw = 19
 fw = 1
 # --- Convertisseur récursif vers dict/list "plats" ---
-from collections.abc import Mapping, Sequence
+
 def to_plain(obj):
     if isinstance(obj, Mapping):
         return {k: to_plain(v) for k, v in obj.items()}

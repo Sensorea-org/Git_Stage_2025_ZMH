@@ -1,0 +1,21 @@
+# Core app
+streamlit==1.36.0
+pandas==2.2.2
+numpy==1.26.4
+matplotlib==3.9.0
+joblib==1.4.2
+
+# ML / SciPy stack
+scikit-learn==1.5.1
+scipy==1.13.1
+
+# Auth
+streamlit-authenticator==0.3.2
+
+# Graphviz (pour graphviz.Digraph ou st.graphviz_chart)
+graphviz==0.20.3
+
+# Sentence embeddings (nécessite PyTorch)
+sentence-transformers==3.0.1
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.3.1+cpu
