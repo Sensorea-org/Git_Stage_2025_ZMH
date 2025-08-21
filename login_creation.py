@@ -41,4 +41,4 @@ def git_push(repo_dir, message="update", branch="main", files=None):
     run(f"git -C {repo_dir} push {authed} HEAD:{branch}")
     return "✅ Push effectué."
 
-git_push(".", message="update", branch="main", files="C:/Users\hugom\OneDrive\Documents\Git_Stage_2025_ZMH\data/trends.json")
+git_push("C:/Users\hugom\OneDrive\Documents\Git_Stage_2025_ZMH", message="update", branch="main", files="C:/Users\hugom\OneDrive\Documents\Git_Stage_2025_ZMH\data/trends.json")
