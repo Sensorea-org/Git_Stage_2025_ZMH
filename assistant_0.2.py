@@ -32,7 +32,7 @@ authenticator = stauth.Authenticate(
     auto_hash=True
 )
 
-authenticator.login(location="main", key="login_form")
+authenticator.login(location="main")
 auth_status = st.session_state.get("authentication_status")
 name       = st.session_state.get("name")
 username   = st.session_state.get("username")
