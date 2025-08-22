@@ -26,8 +26,7 @@ credentials = to_plain(st.secrets["credentials"])
 authenticator = stauth.Authenticate(
     credentials,
     cookie_name="my_app_cookie",
-    cookie_expiry_days=1,
-    auto_hash=True
+    cookie_expiry_days=1
 )
 
 authenticator.login(location="main", key="login_form")
