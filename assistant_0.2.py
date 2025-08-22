@@ -152,7 +152,10 @@ def _main_():
     y_interw, y_pw,aw,bw,a_pw,b_pw = mk_trend(conso,conso_p,occ,occ_p)
     d_water = pd.DataFrame({
         "x": occ,
-        "y (interpolée)": y_interw,
+        "y (interpolée)": y_interw
+    })
+    d_water_p = pd.DataFrame({
+        "x": occ_p,
         "y (past)":y_pw
     })
     #conso elec
@@ -162,7 +165,10 @@ def _main_():
     y_intere, y_pe,ae,be,a_pe,b_pe = mk_trend(conso,conso_p,occ,occ_p)
     d_elec = pd.DataFrame({
         "x": occ,
-        "y (interpolée)": y_intere,
+        "y (interpolée)": y_intere
+    })
+    d_elec_p = pd.DataFrame({
+        "x": occ_p,
         "y (past)":y_pe
     })
     #création des labels de commandes
@@ -486,8 +492,9 @@ def _main_():
         with col2:
             st.subheader("trend : water consumption")
 
-            tab1, tab2 = st.tabs(["Chart", "Dataframe"])
+            tab1, tab2,tab3 = st.tabs(["Chart_actual","Chart_past", "Dataframe"])
             tab1.line_chart(d_water.set_index("x"), height=250)
+            tab1.line_chart(d_water_p.set_index("x"), height=250)
             tab2.dataframe(d_water, height=250, use_container_width=True)
             st.write(f"actual trend: y = {aw:.2f}x + {bw:.2f}")
             st.write(f"past trend: y = {a_pw:.2f}x + {b_pw:.2f}")
@@ -501,9 +508,11 @@ def _main_():
                 st.write("- normalized consumption decreased")
 
         with col3:
+
             st.subheader("trend : electricity consumption")
-            tab1, tab2 = st.tabs(["Chart", "Dataframe"])
+            tab1, tab2,tab3 = st.tabs(["Chart_actual","Chart_past", "Dataframe"])
             tab1.line_chart(d_elec.set_index("x"), height=250)
+            tab1.line_chart(d_elec_p.set_index("x"), height=250)
             tab2.dataframe(d_elec, height=250, use_container_width=True)
             st.write(f"trend actuelle: y = {ae:.2f}x + {be:.2f}")
             st.write(f"trend passée: y = {a_pe:.2f}x + {b_pe:.2f}")
