@@ -494,8 +494,8 @@ def _main_():
 
             tab1, tab2,tab3 = st.tabs(["Chart_actual","Chart_past", "Dataframe"])
             tab1.line_chart(d_water.set_index("x"), height=250)
-            tab1.line_chart(d_water_p.set_index("x"), height=250)
-            tab2.dataframe(d_water, height=250, use_container_width=True)
+            tab2.line_chart(d_water_p.set_index("x"), height=250)
+            tab3.dataframe(d_water, height=250, use_container_width=True)
             st.write(f"actual trend: y = {aw:.2f}x + {bw:.2f}")
             st.write(f"past trend: y = {a_pw:.2f}x + {b_pw:.2f}")
             if bw > b_pw:
@@ -512,8 +512,8 @@ def _main_():
             st.subheader("trend : electricity consumption")
             tab1, tab2,tab3 = st.tabs(["Chart_actual","Chart_past", "Dataframe"])
             tab1.line_chart(d_elec.set_index("x"), height=250)
-            tab1.line_chart(d_elec_p.set_index("x"), height=250)
-            tab2.dataframe(d_elec, height=250, use_container_width=True)
+            tab2.line_chart(d_elec_p.set_index("x"), height=250)
+            tab3.dataframe(d_elec, height=250, use_container_width=True)
             st.write(f"trend actuelle: y = {ae:.2f}x + {be:.2f}")
             st.write(f"trend passée: y = {a_pe:.2f}x + {b_pe:.2f}")
             if be > b_pe:
