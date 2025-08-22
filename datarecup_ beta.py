@@ -360,5 +360,7 @@ while True:
         print(dj_list)
         data['dj'] = dj_list
         writing_trends(data)
+        git_push("C:/Users/hugom/OneDrive/Documents/Git_Stage_2025_ZMH", message="update", branch="master",
+                 files="C:/Users/hugom/OneDrive/Documents/Git_Stage_2025_ZMH/data/trends_TH.json")
     if check_train()==True:
         train()
