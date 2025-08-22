@@ -1,4 +1,5 @@
 import streamlit as st
+import torch
 import pandas as pd
 import numpy as np
 import joblib
@@ -8,12 +9,10 @@ from sklearn.preprocessing import LabelEncoder
 from sentence_transformers import SentenceTransformer
 from graphviz import Digraph
 import streamlit_authenticator as stauth
-
-from collections.abc import Mapping, Sequence
 pw = 19
 fw = 1
 # --- Convertisseur récursif vers dict/list "plats" ---
-
+from collections.abc import Mapping, Sequence
 def to_plain(obj):
     if isinstance(obj, Mapping):
         return {k: to_plain(v) for k, v in obj.items()}
@@ -27,11 +26,12 @@ credentials = to_plain(st.secrets["credentials"])
 authenticator = stauth.Authenticate(
     credentials,
     cookie_name="my_app_cookie",
-    cookie_key="random_signature_key",
-    cookie_expiry_days=1
+    key="random_signature_key",
+    cookie_expiry_days=1,
+    auto_hash=True
 )
 
-authenticator.login(location="main")
+authenticator.login(location="main", key="login_form")
 auth_status = st.session_state.get("authentication_status")
 name       = st.session_state.get("name")
 username   = st.session_state.get("username")
@@ -56,11 +56,7 @@ def _main_():
     clf = joblib.load("./modele_multioutput_classification.pkl")
     reg = joblib.load("./modele_multioutput_regression.pkl")
     #import fichier json
-    trends_paths = ["THE Hotel","autre hotel random"]
-    name = st.sidebar.radio("Choisir l'hôtel à afficher", trends_paths, key="hotel")
-    hotels_paths = ["./data/trends_TH.json","./data/trends_TH.json"]
-    ind = trends_paths.index(name)
-    with open(hotels_paths[ind], "r") as f:
+    with open("./data/trends.json", "r") as f:
         data_loaded = json.load(f)
 
 
@@ -152,10 +148,7 @@ def _main_():
     y_interw, y_pw,aw,bw,a_pw,b_pw = mk_trend(conso,conso_p,occ,occ_p)
     d_water = pd.DataFrame({
         "x": occ,
-        "y (interpolée)": y_interw
-    })
-    d_water_p = pd.DataFrame({
-        "x": occ_p,
+        "y (interpolée)": y_interw,
         "y (past)":y_pw
     })
     #conso elec
@@ -165,10 +158,7 @@ def _main_():
     y_intere, y_pe,ae,be,a_pe,b_pe = mk_trend(conso,conso_p,occ,occ_p)
     d_elec = pd.DataFrame({
         "x": occ,
-        "y (interpolée)": y_intere
-    })
-    d_elec_p = pd.DataFrame({
-        "x": occ_p,
+        "y (interpolée)": y_intere,
         "y (past)":y_pe
     })
     #création des labels de commandes
@@ -402,6 +392,9 @@ def _main_():
                           'chiller_fixing', 'cogen_fixing', 'fixing', 'get_consumption',
                           'get_elec_consumption', 'get_gaz_consumption', 'get_occupation',
                           'heat_production', 'rooms', 'temp_boiler', 'temp_chill', 'ventilation'])
+
+
+    st.image("./acceuil.jpg")
     page1, page2, page3 = st.tabs(["Trends","Prediction","Assistant"])
 
     with page3:
@@ -489,10 +482,9 @@ def _main_():
         with col2:
             st.subheader("trend : water consumption")
 
-            tab1, tab2,tab3 = st.tabs(["Chart_actual","Chart_past", "Dataframe"])
+            tab1, tab2 = st.tabs(["Chart", "Dataframe"])
             tab1.line_chart(d_water.set_index("x"), height=250)
-            tab2.line_chart(d_water_p.set_index("x"), height=250)
-            tab3.dataframe(d_water, height=250, use_container_width=True)
+            tab2.dataframe(d_water, height=250, use_container_width=True)
             st.write(f"actual trend: y = {aw:.2f}x + {bw:.2f}")
             st.write(f"past trend: y = {a_pw:.2f}x + {b_pw:.2f}")
             if bw > b_pw:
@@ -505,12 +497,10 @@ def _main_():
                 st.write("- normalized consumption decreased")
 
         with col3:
-
             st.subheader("trend : electricity consumption")
-            tab1, tab2,tab3 = st.tabs(["Chart_actual","Chart_past", "Dataframe"])
+            tab1, tab2 = st.tabs(["Chart", "Dataframe"])
             tab1.line_chart(d_elec.set_index("x"), height=250)
-            tab2.line_chart(d_elec_p.set_index("x"), height=250)
-            tab3.dataframe(d_elec, height=250, use_container_width=True)
+            tab2.dataframe(d_elec, height=250, use_container_width=True)
             st.write(f"trend actuelle: y = {ae:.2f}x + {be:.2f}")
             st.write(f"trend passée: y = {a_pe:.2f}x + {b_pe:.2f}")
             if be > b_pe:
