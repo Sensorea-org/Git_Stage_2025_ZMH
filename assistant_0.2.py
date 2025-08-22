@@ -20,15 +20,12 @@ def to_plain(obj):
         return [to_plain(v) for v in obj]
     else:
         return obj
-st.write("theme.base:", st.get_option("theme.base"))
-st.write("theme.primaryColor:", st.get_option("theme.primaryColor"))
 
 # 1) On récupère les credentials et on les rend mutables/“plats”
 credentials = to_plain(st.secrets["credentials"])
 authenticator = stauth.Authenticate(
     credentials,
     cookie_name="my_app_cookie",
-    key="random_signature_key",
     cookie_expiry_days=1,
     auto_hash=True
 )
