@@ -58,7 +58,7 @@ def _main_():
     #import fichier json
     trends_paths = ["THE Hotel","autre hotel random"]
     name = st.sidebar.radio("Choisir l'hôtel à afficher", trends_paths, key="hotel")
-    hotels_paths = ["./data/trends.json","./data/trends.json"]
+    hotels_paths = ["./data/trends_TH.json","./data/trends_TH.json"]
     ind = trends_paths.index(name)
     with open(hotels_paths[ind], "r") as f:
         data_loaded = json.load(f)

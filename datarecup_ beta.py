@@ -11,6 +11,7 @@ import os
 import joblib
 from add_segment import segment,search_sim,savefile,readandwrite
 from autotraining_tree import train
+from login_creation import run_git,git_push
 
 def predict(X,clf):
     input = X
@@ -20,7 +21,7 @@ def predict(X,clf):
 
 clf = joblib.load("./modele_multioutput_regression.pkl")
 
-def readandwrite_model(model,path ="./data/trends.json",pw=19,fw=1):
+def readandwrite_model(model,path ="./data/trends_TH.json",pw=19,fw=1):
     with open(path, "r") as f:
         data_loaded = json.load(f)
     temp = data_loaded["temp_ext"]
@@ -82,7 +83,7 @@ def writing_trends(data):
         json.dump(data, f, indent=4)
         f.close()
 
-    print(f"{data} written to ./data/trends.json")
+    print(f"{data} written to ./data/trends_TH.json")
 
 
 bacnet = BAC0.connect('172.21.212.141')
@@ -259,7 +260,7 @@ elec = [
     ]
 
 
-with open("./data/trends.json", "r") as f:
+with open("./data/trends_TH.json", "r") as f:
     data_loaded = json.load(f)
 
 dj_list = data_loaded['dj']
@@ -344,7 +345,8 @@ while True:
         path = readandwrite_model(clf)
         #ligne à commenter si on veut vraiment rajouter
         os.remove(path + ".pt")
-
+        git_push("C:/Users/hugom/OneDrive/Documents/Git_Stage_2025_ZMH", message="update", branch="master",
+                 files="C:/Users/hugom/OneDrive/Documents/Git_Stage_2025_ZMH/data/trends_TH.json")
     t2b = datetime.datetime.today().hour
     if t2b!=t1b:
         print("here i m")
