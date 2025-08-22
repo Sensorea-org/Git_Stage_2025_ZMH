@@ -394,7 +394,6 @@ def _main_():
                           'heat_production', 'rooms', 'temp_boiler', 'temp_chill', 'ventilation'])
 
 
-    st.image("./acceuil.jpg")
     page1, page2, page3 = st.tabs(["Trends","Prediction","Assistant"])
 
     with page3:
