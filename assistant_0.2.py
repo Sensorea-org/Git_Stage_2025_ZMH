@@ -402,9 +402,6 @@ def _main_():
                           'chiller_fixing', 'cogen_fixing', 'fixing', 'get_consumption',
                           'get_elec_consumption', 'get_gaz_consumption', 'get_occupation',
                           'heat_production', 'rooms', 'temp_boiler', 'temp_chill', 'ventilation'])
-
-
-    st.image("./acceuil.jpg")
     page1, page2, page3 = st.tabs(["Trends","Prediction","Assistant"])
 
     with page3:
