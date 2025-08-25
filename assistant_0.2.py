@@ -328,6 +328,7 @@ def _main_():
                         files_map={out_local: "data/trends.json"},  # dest relatif dans le repo
                         commit_message="update trends.json (Streamlit)",
                     )
+                    st.write(msg)
 
 
             except:
