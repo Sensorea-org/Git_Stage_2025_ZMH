@@ -376,8 +376,7 @@ def _main_():
                         "text": """welcom to the client service, please choose an option : 
                                     """,
                         "options": [{"label": "Hotel_info", "next": "Hotel_info"},
-                                    {"label": "fixing", "next": "fixing"},
-                                    {"label": "rooms", "next": "rooms"}],
+                                    {"label": "fixing", "next": "fixing"}],
                         "on_action": False},
             "Hotel_info": {"type": "message",
                            "text": """welcom to the Informations client service""",
