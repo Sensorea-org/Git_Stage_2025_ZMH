@@ -317,20 +317,23 @@ def _main_():
             try:
                 output = int(word)
                 st.write(room_dic)
-                if str(output) in room_dic:
-                    st.write(output,room_dic[output])
-                    out_local = "/tmp/room_actual.json"  # chemin ABSOLU dans l'instance
-                    repo = "zaurdar/Git_Stage_2025_ZMH"
-                    branch = "master"
-                    with open(out_local, "w+") as f:
-                        json.dump(output,f)
-                    msg = git_push_streamlit(
-                        repo_full=repo,
-                        branch=branch,
-                        files_map={out_local: "data/trends.json"},  # dest relatif dans le repo
-                        commit_message="update trends.json (Streamlit)",
-                    )
-                    st.write(msg)
+                try:
+                    if str(output) in room_dic:
+                        st.write(output,room_dic[output])
+                        out_local = "/tmp/room_actual.json"  # chemin ABSOLU dans l'instance
+                        repo = "zaurdar/Git_Stage_2025_ZMH"
+                        branch = "master"
+                        with open(out_local, "w+") as f:
+                            json.dump(output,f)
+                        msg = git_push_streamlit(
+                            repo_full=repo,
+                            branch=branch,
+                            files_map={out_local: "data/trends.json"},  # dest relatif dans le repo
+                            commit_message="update trends.json (Streamlit)",
+                        )
+                        st.write(msg)
+                except:
+                    output = int(word)
 
 
             except:
