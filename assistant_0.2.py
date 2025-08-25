@@ -317,6 +317,7 @@ def _main_():
             try:
                 output = int(word)
                 if output in room_dic:
+                    st.write(output,room_dic[output])
                     out_local = "/tmp/room_actual.json"  # chemin ABSOLU dans l'instance
                     repo = "zaurdar/Git_Stage_2025_ZMH"
                     branch = "master"
