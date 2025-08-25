@@ -68,7 +68,7 @@ def _main_():
     ind = trends_paths.index(name)
     with open(hotels_paths[ind], "r") as f:
         data_loaded = json.load(f)
-    data_room = data_loaded["room"]
+    data_room = data_loaded["rooms"]
 
     dj = data_loaded["dj"]
     temp = data_loaded["temp_ext"]
