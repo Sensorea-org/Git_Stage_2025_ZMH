@@ -81,7 +81,7 @@ def writing_trends(data):
     print("writting...✒️")
     for i in data:
         print(type(i))
-    with open("./data/trends.json", "w+") as f:
+    with open("./data/trends_TH.json", "w+") as f:
         json.dump(data, f, indent=4)
         f.close()
 

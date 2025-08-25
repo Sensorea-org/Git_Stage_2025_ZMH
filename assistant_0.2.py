@@ -8,7 +8,8 @@ from sklearn.preprocessing import LabelEncoder
 from sentence_transformers import SentenceTransformer
 from graphviz import Digraph
 import streamlit_authenticator as stauth
-
+import os, tempfile, shutil, subprocess
+from pathlib import Path
 from collections.abc import Mapping, Sequence
 
 pw = 19
@@ -67,6 +68,7 @@ def _main_():
     ind = trends_paths.index(name)
     with open(hotels_paths[ind], "r") as f:
         data_loaded = json.load(f)
+
 
     dj = data_loaded["dj"]
     temp = data_loaded["temp_ext"]
@@ -250,12 +252,84 @@ def _main_():
         temp = 2
         return temp
 
+    def _git():
+        g = shutil.which("git")
+        if not g:
+            raise RuntimeError("git introuvable dans le PATH.")
+        return g
+
+    def _run(cmd, cwd=None):
+        """cmd est une liste ['git', 'clone', ...]"""
+        r = subprocess.run(cmd, cwd=cwd, text=True, capture_output=True)
+        if r.returncode != 0:
+            raise RuntimeError(r.stderr or r.stdout or f"Commande échouée: {' '.join(cmd)}")
+        return r.stdout.strip()
+
+    def git_push_streamlit(
+            repo_full: str,  # "owner/repo"
+            branch: str,  # "main" ou "master"
+            files_map: dict[str, str],  # {src_absolu: dest_relatif_dans_repo}
+            commit_message: str = "update from app",
+    ):
+        """
+        Clone vers un répertoire temp, copie les fichiers, commit & push.
+        """
+        token = st.secrets.get("GH_TOKEN")
+        git = _git()
+
+        # URL authentifiée (on n'imprime/journalise PAS cette valeur)
+        authed = f"https://x-access-token:{token}@github.com/{repo_full}.git"
+
+        tmp = Path(tempfile.mkdtemp(prefix="ghpush-"))
+        try:
+            # 1) Clone shallow de la branche ciblée
+            _run([git, "clone", "--depth", "1", "--branch", branch, authed, str(tmp)])
+
+            # 2) Copier les fichiers à pousser
+            for src, dest_rel in files_map.items():
+                src_p = Path(src)
+                if not src_p.exists():
+                    raise FileNotFoundError(f"Source introuvable: {src}")
+                dest_p = tmp / dest_rel
+                dest_p.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(src_p, dest_p)
+
+            # 3) Stage & commit
+            _run([git, "-C", str(tmp), "add", "-A"])
+            rc = subprocess.run([git, "-C", str(tmp), "diff", "--cached", "--quiet"]).returncode
+            if rc == 0:
+                return "Rien à committer."
+            _run([git, "-C", str(tmp), "config", "user.name", "bot"])
+            _run([git, "-C", str(tmp), "config", "user.email", "bot@example.invalid"])
+            _run([git, "-C", str(tmp), "commit", "-m", commit_message])
+
+            # 4) Push
+            _run([git, "-C", str(tmp), "push", "origin", f"HEAD:{branch}"])
+            return "✅ Push effectué."
+        finally:
+            # Nettoyage du clone temporaire
+            shutil.rmtree(tmp, ignore_errors=True)
     def room_check(input):
+        with open("room_sonar.json", "r") as f:
+            room_dic = json.load(f)
         words = input.split(" ")
         for word in words:
             try:
                 output = int(word)
-                output = "problem at " + str(output)
+                if output in room_dic:
+                    out_local = "/tmp/room_actual.json"  # chemin ABSOLU dans l'instance
+                    repo = "zaurdar/Git_Stage_2025_ZMH"
+                    branch = "master"
+                    with open(out_local, "w+") as f:
+                        json.dump(output,f)
+                    msg = git_push_streamlit(
+                        repo_full=repo,
+                        branch=branch,
+                        files_map={out_local: "data/trends.json"},  # dest relatif dans le repo
+                        commit_message="update trends.json (Streamlit)",
+                    )
+
+
             except:
                 output = "room has not been recognized"
         return output
