@@ -88,13 +88,24 @@ def writing_trends(data):
     print(f"{data} written to ./data/trends_TH.json")
 
 
-bacnet = BAC0.connect('172.21.212.141')
+bacnet = BAC0.lite('172.21.212.141',bbmdAddress='192.168.1.101',bbmdTTL=900)
 BAC0.log_level("silence")
 w = 20
 def write(val):
     ES_2807664 = BAC0.device('192.168.1.101', 2807664, bacnet)
     ES_2807664['output_model_bin']=val
+def get_room():
+    dev = BAC0.device('192.168.1.50',1000, bacnet)
+    objects = dev.points
+    room_json = {}
+    print(len(objects))
+    for i in range(0,len(objects)-5,6):
+        temp = str(objects[i]).split("-")
+        temp = int(temp[0].replace("MCS BACnet stack\n/TH_CO2_", ""))
+        room_json[str(temp)] = [str(objects[i+1]),str(objects[i+2]),str(objects[i+3]),str(objects[i+4]),str(objects[i+4])]
+        print(room_json[str(temp)])
 
+    return room_json
 def get_cmds(cmds):
     chaufferie = BAC0.device('192.168.1.17',2886551,bacnet) #RPC_March 1.7.1 ; AS-27-2 BACnet Interface 2020 Saison 2
     objects = chaufferie.points
@@ -275,7 +286,7 @@ occupation_list = data_loaded['occupation_list']
 
 
 t = 25
-min = timedelta(days=0, hours=0, minutes=15, seconds=0)
+min = timedelta(days=0, hours=0, minutes=0, seconds=10)
 t1 = datetime.datetime.today()
 t1b = datetime.datetime.today().hour-1
 data = {"occupation_list":occupation_list,
@@ -342,6 +353,7 @@ while True:
         occupation_list = occupation_list[1:]
         occupation_list = get_occupation(occupation_list)
         data['occupation_list'] = occupation_list
+        data['rooms']=get_room()
         writing_trends(data)
         #rajout de l'échantillon dans la base de donnée
         path = readandwrite_model(clf)
