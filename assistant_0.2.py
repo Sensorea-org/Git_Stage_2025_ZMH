@@ -335,7 +335,7 @@ def _main_():
 
             except:
                 output = "room has not been recognized"
-        return room_dic[output]
+        return room_dic[str(output)]
 
     def get_occupation(data=data_loaded):
         return f"occupation : {data['occupation_list'][-1]}"
