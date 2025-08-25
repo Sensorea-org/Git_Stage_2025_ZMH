@@ -316,6 +316,7 @@ def _main_():
         for word in words:
             try:
                 output = int(word)
+                st.write(room_dic)
                 if output in room_dic:
                     st.write(output,room_dic[output])
                     out_local = "/tmp/room_actual.json"  # chemin ABSOLU dans l'instance
