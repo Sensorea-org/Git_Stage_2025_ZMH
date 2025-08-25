@@ -258,7 +258,7 @@ def _main_():
         for word in words:
             try:
                 output = int(word)
-                output = data[output]
+                output = data[str(output)]
             except:
                 output = "room has not been recognized"
         return output
