@@ -102,7 +102,7 @@ def get_room():
     for i in range(0,len(objects)-5,6):
         temp = str(objects[i]).split("-")
         temp = int(temp[0].replace("MCS BACnet stack\n/TH_CO2_", ""))
-        room_json[str(temp)] = [str(objects[i+1]),str(objects[i+2]),str(objects[i+3]),str(objects[i+4]),str(objects[i+4])]
+        room_json[str(temp)] = [str(objects[i+1]),str(objects[i+2]),str(objects[i+3]),str(objects[i+4]),str(objects[i+5])]
         print(room_json[str(temp)])
 
     return room_json
@@ -286,7 +286,7 @@ occupation_list = data_loaded['occupation_list']
 
 
 t = 25
-min = timedelta(days=0, hours=0, minutes=0, seconds=10)
+min = timedelta(days=0, hours=0, minutes=15, seconds=0)
 t1 = datetime.datetime.today()
 t1b = datetime.datetime.today().hour-1
 data = {"occupation_list":occupation_list,
