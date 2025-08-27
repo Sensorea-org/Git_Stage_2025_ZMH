@@ -285,6 +285,7 @@ def _main_():
             for i in range(len(le.classes_)):
                 if le.classes_[i] in labels:
                     next_.append(model_output[i])
+            st.write(next_)
             pred_class = labels[next_.index(max(next_))]
             prob = [float(prob) for prob in next_]
             dic = {"probabilités": prob, "labels": labels}
