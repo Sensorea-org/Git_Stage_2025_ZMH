@@ -285,7 +285,6 @@ def _main_():
             for i in range(len(le.classes_)):
                 if le.classes_[i] in labels:
                     next_.append(model_output[i])
-            st.write(next_)
             pred_class = labels[next_.index(max(next_))]
             prob = [float(prob) for prob in next_]
             dic = {"probabilités": prob, "labels": labels}
@@ -303,14 +302,14 @@ def _main_():
                         "text": """welcom to the client service, please choose an option : 
                                     """,
                         "options": [{"label": "Hotel_info", "next": "Hotel_info"},
-                                    {"label": "fixing", "next": "fixing"},
-                                    {"label": "rooms", "next": "rooms"}],
+                                    {"label": "fixing", "next": "fixing"}],
                         "on_action": False},
             "Hotel_info": {"type": "message",
                            "text": """welcom to the Informations client service""",
                            "options": [{"label": "home", "next": "acceuil"},
                                        {"label": "consumption", "next": "get_consumption"},
                                        {"label": "occupation", "next": "get_occupation"},
+                                       {"label": "rooms", "next": "rooms"},
                                        {"label": "temperature at the ouput off the boiler", "next": "temp_boiler"},
                                        {"label": "temperature at the ouput off the chiller", "next": "temp_chill"},
                                        {"label": "ventilation", "next": "ventilation"}],
@@ -413,9 +412,9 @@ def _main_():
 
     le = LabelEncoder()
     y = le.fit_transform(['Hotel_info', 'acceuil', 'boiler_fixing', 'chill_production',
-                          'chiller_fixing', 'cogen_fixing', 'fixing', 'rooms', 'get_consumption',
+                          'chiller_fixing', 'cogen_fixing', 'fixing', 'get_consumption',
                           'get_elec_consumption', 'get_gaz_consumption', 'get_occupation',
-                          'heat_production', 'temp_boiler', 'temp_chill', 'ventilation'])
+                          'heat_production', 'rooms', 'temp_boiler', 'temp_chill', 'ventilation'])
 
     page1, page2, page3 = st.tabs(["Trends", "Prediction", "Assistant"])
 
@@ -597,5 +596,3 @@ elif auth_status is False:
     st.error("Identifiants invalides")
 else:
     st.info("Veuillez vous connecter")
-
-

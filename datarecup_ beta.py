@@ -11,7 +11,7 @@ import os
 import joblib
 from add_segment import segment,search_sim,savefile,readandwrite
 from autotraining_tree import train
-from login_creation import run_git,git_push
+
 
 
 
@@ -283,10 +283,10 @@ gaz = data_loaded['gaz consumption']
 elec = data_loaded['electricity consumption']
 temp_list=data_loaded['temp_ext']
 occupation_list = data_loaded['occupation_list']
-
+rooms = data_loaded['rooms']
 
 t = 25
-min = timedelta(days=0, hours=0, minutes=15, seconds=0)
+min = timedelta(days=0, hours=0, minutes=0, seconds=10)
 t1 = datetime.datetime.today()
 t1b = datetime.datetime.today().hour-1
 data = {"occupation_list":occupation_list,
@@ -296,7 +296,8 @@ data = {"occupation_list":occupation_list,
         "temp_ext":temp_list,
         "dj":dj_list,
         'commandes': cmds_list,
-        "time":t}
+        "time":t,
+        "rooms":rooms}
 
 occupation_list = get_occupation([])
 while True:
@@ -358,9 +359,7 @@ while True:
         #rajout de l'échantillon dans la base de donnée
         path = readandwrite_model(clf)
         #ligne à commenter si on veut vraiment rajouter
-        os.remove(path + ".pt")
-        git_push("C:/Users/hugom/OneDrive/Documents/Git_Stage_2025_ZMH", message="update", branch="master",
-                 files="C:/Users/hugom/OneDrive/Documents/Git_Stage_2025_ZMH/data/trends_TH.json")
+
     t2b = datetime.datetime.today().hour
     if t2b!=t1b:
         print("here i m")
@@ -374,7 +373,6 @@ while True:
         print(dj_list)
         data['dj'] = dj_list
         writing_trends(data)
-        git_push("C:/Users/hugom/OneDrive/Documents/Git_Stage_2025_ZMH", message="update", branch="master",
-                 files="C:/Users/hugom/OneDrive/Documents/Git_Stage_2025_ZMH/data/trends_TH.json")
+
     if check_train()==True:
         train()

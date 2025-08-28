@@ -82,7 +82,7 @@ def savefile(input,output,pw):
             "input": input,
             "output": output
             }
-            root = "./dataset/"
+            root = "./dataset/newdataset/"
             path = root+path
 
             # Sauvegarde dans un fichier .pt
