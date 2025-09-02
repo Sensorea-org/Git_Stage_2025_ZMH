@@ -9,8 +9,7 @@ import torch
 import numpy as np
 import os
 import joblib
-from add_segment import segment,search_sim,savefile,readandwrite
-from autotraining_tree import train
+from sensorea_ia_lib import segment,search_sim,savefile,readandwrite,train
 
 
 
@@ -26,31 +25,26 @@ clf = joblib.load("./modele_multioutput_regression.pkl")
 def readandwrite_model(model,path ="./data/trends_TH.json",pw=19,fw=1):
     with open(path, "r") as f:
         data_loaded = json.load(f)
-    temp = data_loaded["temp_ext"]
+    temp = data_loaded["temp_ext"][-(pw+fw):]
     data = np.array(data_loaded["commandes"])
     data = list(data.reshape(-1))
 
-    #prediction creation du segment actuellement hybride pcq on a pas les conso mais il manque que ça
+    # prediction creation du segment actuellement hybride pcq on a pas les conso mais il manque que ça
 
-    conso_gaz = np.zeros(len(data_loaded["gaz consumption"])-1)
-    for i in range(1,len(conso_gaz),1):
-        conso_gaz[i]=(data_loaded["gaz consumption"][i]-data_loaded["gaz consumption"][i-1])/10
-
-    conso_water = np.zeros(len(data_loaded["water consumption"])-1)
-    for i in range(1,len(conso_water),1):
-        conso_water[i]=(data_loaded["water consumption"][i]-data_loaded["water consumption"][i-1])/10
+    conso_gaz = data_loaded["gaz consumption"][-(pw+fw):]
+    conso_water = data_loaded["water consumption"][-(pw+fw):]
 
 
+    t = data_loaded["time"]
     data.append(conso_gaz[pw])
     for i in temp:
         data.append(i)
 
     data.append(conso_water[-1])
-    t = dt.today()
-    data.append(t.hour)
-    for i in conso_gaz[pw+fw:]:
+    data.append(t)
+    cons = [conso_gaz[i]-conso_gaz[i-1] for i in range(len(conso_gaz)-(pw+fw),len(conso_gaz),1)]
+    for i in cons:
         data.append(i)
-
     X = np.array(data)
     y_pred = predict(X, clf)
 
@@ -62,12 +56,14 @@ def readandwrite_model(model,path ="./data/trends_TH.json",pw=19,fw=1):
     print(val_analogique)
     time_w = []
     delta = timedelta(days=0, hours=0, minutes=15, seconds=0)
+    t = dt.now()
     for i in range(pw + fw, 0, -1):
         time_w.append(t - i * delta)
     cmd = np.reshape(X[0:240], (pw + fw, 12))
     temp_ext = list(X[241:261])
     w_cons = X[261]
     gaz_cons = X[263:]
+    print(time_w)
     seg = segment(cmd, temp_ext, time_w, w_cons, gaz_cons, pw)
     path = savefile(seg,y_pred,pw)
     return path
@@ -209,6 +205,18 @@ def get_occupation(occupation_list):
             occupation_list.append(occ)
             break
     return occupation_list
+def get_true_occupation(True_occupation_list):
+    ES_2807664 = BAC0.device('192.168.1.101', 2807664, bacnet)
+    objects = ES_2807664.points
+    for i in objects:
+        if "ES_2807664/Effective occupation" in str(i):
+            t = str(i)
+            print(t)
+            t = t.split(" ")
+            occ = float(t[3])
+            True_occupation_list.append(occ)
+            break
+    return True_occupation_list
 def get_temp(temp_list):
     ES_2807664 = BAC0.device('192.168.1.101', 2807664, bacnet)
     objects = ES_2807664.points
@@ -219,58 +227,14 @@ def get_temp(temp_list):
             tmp = float(t[2])
             temp_list.append(tmp)
     return temp_list
-def degres_heure_glissants(temperatures, t_base=15.0):
+def degres_heure_glissants(temperatures, t_base,w):
     dh_glissant = sum(t_base - t for t in temperatures)
-    return dh_glissant
+    return dh_glissant/w
 
 def check_train():
     ES_2807664 = BAC0.device('192.168.1.101', 2807664, bacnet)
     return ES_2807664["train"]
 
-
-elec = [
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0,
-        26395371520.0
-    ]
 
 
 with open("./data/trends_TH.json", "r") as f:
@@ -284,12 +248,13 @@ elec = data_loaded['electricity consumption']
 temp_list=data_loaded['temp_ext']
 occupation_list = data_loaded['occupation_list']
 rooms = data_loaded['rooms']
-
+True_occupation_list = data_loaded['True_occupation_list']
 t = 25
-min = timedelta(days=0, hours=0, minutes=0, seconds=10)
+min = timedelta(days=0, hours=0, minutes=15, seconds=0)
 t1 = datetime.datetime.today()
 t1b = datetime.datetime.today().hour-1
 data = {"occupation_list":occupation_list,
+        "True_occupation_list":True_occupation_list,
         "water consumption":water,
         "electricity consumption":elec,
         "gaz consumption":gaz,
@@ -304,26 +269,39 @@ while True:
 
     #padding d'initiation
     if len(cmds_list)<w:
+        print("padding cmd")
         while (len(cmds_list)<w):
             cmds_list = get_cmds(cmds_list)
-    if len(occupation_list)<(2*w):
-        while (len(occupation_list)<(2*w)):
+
+    if len(occupation_list)<(96):
+        print("padding occupation")
+        while (len(occupation_list)<(96)):
             occupation_list = get_occupation(occupation_list)
-    if len(temp_list)<w:
-        while (len(temp_list)<w):
+    if len(True_occupation_list)<(96):
+        print("padding occupation")
+        while (len(True_occupation_list)<(96)):
+            True_occupation_list = get_true_occupation(True_occupation_list)
+
+    if len(temp_list)<48:
+        print("padding temp")
+        while (len(temp_list)<48):
             temp_list = get_temp(temp_list)
-    if len(gaz)<(2*w+1):
-        while (len(gaz)<(2*w+1)):
+    if len(gaz)<96:
+        print("padding gaz")
+        while (len(gaz)<96):
             gaz = get_gaz_conso(gaz)
-    if len(elec)<(2*w+1):
-        while (len(elec)<(2*w+1)):
+    if len(elec)<96:
+        print("padding elec")
+        while (len(elec)<96):
             elec = get_elec_conso(elec)
-    if len(water)<(2*w+1):
-        while (len(water)<(2*w+1)):
+    if len(water)<96:
+        print("padding water")
+        while (len(water)<96):
             water = get_water_conso(water)
-    if len(dj_list)<(w/2):
-        while (len(dj_list)<(w/2)):
-            dj_list.append(degres_heure_glissants(temp_list)/(len(dj_list)+1))
+    if len(dj_list)<24:
+        print("padding dj")
+        while (len(dj_list)<24):
+            dj_list.append(degres_heure_glissants(temp_list,15,24))
     t2 = datetime.datetime.today()
     if (t2-t1)>=min:
         #ajout conso gaz
@@ -341,10 +319,6 @@ while True:
         #ajout time
         T = get_time()
         data['time'] = T
-        #ajout température
-        temp_list = temp_list[1:]
-        temp_list = get_temp(temp_list)
-        data['temp_ext'] = temp_list
         #ecriture des commandes
         t1 = datetime.datetime.today()
         cmds_list = cmds_list[1:]
@@ -354,6 +328,9 @@ while True:
         occupation_list = occupation_list[1:]
         occupation_list = get_occupation(occupation_list)
         data['occupation_list'] = occupation_list
+        True_occupation_list = True_occupation_list[1:]
+        True_occupation_list = get_true_occupation(True_occupation_list)
+        data['True_occupation_list'] = True_occupation_list
         data['rooms']=get_room()
         writing_trends(data)
         #rajout de l'échantillon dans la base de donnée
@@ -366,10 +343,15 @@ while True:
         #ajout température
         temp_list = temp_list[1:]
         temp_list = get_temp(temp_list)
+        data['temp_ext'] = temp_list
         t1b = datetime.datetime.today().hour
-        dj = degres_heure_glissants(temp_list)
-        dj_list = dj_list[1:]
-        dj_list.append(dj/4)
+        dj = degres_heure_glissants(temp_list,15,24)
+        if dj>0:
+            dj_list = dj_list[1:]
+            dj_list.append(dj)
+        else:
+            dj_list = dj_list[1:]
+            dj_list.append(0)
         print(dj_list)
         data['dj'] = dj_list
         writing_trends(data)
