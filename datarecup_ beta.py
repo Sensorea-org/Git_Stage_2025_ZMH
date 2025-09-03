@@ -83,8 +83,12 @@ def writing_trends(data):
 
     print(f"{data} written to ./data/trends_TH.json")
 
+with open("./data/IP.txt","r") as f:
+    IPadress = str(f.read())
+    print(IPadress)
+    f.close()
 
-bacnet = BAC0.lite('172.21.212.141',bbmdAddress='192.168.1.101',bbmdTTL=900)
+bacnet = BAC0.lite(IPadress,bbmdAddress='192.168.1.101',bbmdTTL=900)
 BAC0.log_level("silence")
 w = 20
 def write(val):
@@ -227,9 +231,7 @@ def get_temp(temp_list):
             tmp = float(t[2])
             temp_list.append(tmp)
     return temp_list
-def degres_heure_glissants(temperatures, t_base,w):
-    dh_glissant = sum(t_base - t for t in temperatures)
-    return dh_glissant/w
+
 
 def check_train():
     ES_2807664 = BAC0.device('192.168.1.101', 2807664, bacnet)
@@ -240,7 +242,6 @@ def check_train():
 with open("./data/trends_TH.json", "r") as f:
     data_loaded = json.load(f)
 
-dj_list = data_loaded['dj']
 cmds_list = data_loaded['commandes']
 water = data_loaded['water consumption']
 gaz = data_loaded['gaz consumption']
@@ -259,12 +260,11 @@ data = {"occupation_list":occupation_list,
         "electricity consumption":elec,
         "gaz consumption":gaz,
         "temp_ext":temp_list,
-        "dj":dj_list,
         'commandes': cmds_list,
         "time":t,
         "rooms":rooms}
 
-occupation_list = get_occupation([])
+
 while True:
 
     #padding d'initiation
@@ -286,22 +286,18 @@ while True:
         print("padding temp")
         while (len(temp_list)<48):
             temp_list = get_temp(temp_list)
-    if len(gaz)<96:
+    if len(gaz)<192:
         print("padding gaz")
-        while (len(gaz)<96):
+        while (len(gaz)<192):
             gaz = get_gaz_conso(gaz)
-    if len(elec)<96:
+    if len(elec)<192:
         print("padding elec")
-        while (len(elec)<96):
+        while (len(elec)<192):
             elec = get_elec_conso(elec)
-    if len(water)<96:
+    if len(water)<192:
         print("padding water")
-        while (len(water)<96):
+        while (len(water)<192):
             water = get_water_conso(water)
-    if len(dj_list)<24:
-        print("padding dj")
-        while (len(dj_list)<24):
-            dj_list.append(degres_heure_glissants(temp_list,15,24))
     t2 = datetime.datetime.today()
     if (t2-t1)>=min:
         #ajout conso gaz
@@ -345,16 +341,5 @@ while True:
         temp_list = get_temp(temp_list)
         data['temp_ext'] = temp_list
         t1b = datetime.datetime.today().hour
-        dj = degres_heure_glissants(temp_list,15,24)
-        if dj>0:
-            dj_list = dj_list[1:]
-            dj_list.append(dj)
-        else:
-            dj_list = dj_list[1:]
-            dj_list.append(0)
-        print(dj_list)
-        data['dj'] = dj_list
-        writing_trends(data)
-
     if check_train()==True:
         train()

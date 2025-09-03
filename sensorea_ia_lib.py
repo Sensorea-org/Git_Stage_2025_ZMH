@@ -117,6 +117,8 @@ def plot_trend(param,names,trend,bornes):
         X = [0,100]
     if axes[1]=="dd":
         X = [0,25]
+    if axes[1]=="cdd":
+        X = [0,3]
     X = np.linspace(min(X),max(X),1000)
 
     trend_dic =[]
@@ -381,3 +383,6 @@ def readandwrite(dataset,path ="./data/trends.json",pw=19,fw=1):
             chng[i]=0
     path = savefile(input,abs(chng),pw)
     return path
+def degres_heure_glissants(temperatures, t_base, w):
+    dh_glissant = sum(t_base - t for t in temperatures)
+    return dh_glissant / w

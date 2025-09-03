@@ -48,11 +48,10 @@ def _main_():
     clf = joblib.load("./modele_multioutput_classification.pkl")
     reg = joblib.load("./modele_multioutput_regression.pkl")
     # import fichier json
-    with open("./data/trends_TH.json", "r") as f:
+    with open("./data/trends_TH - Copie.json", "r") as f:
         data_loaded = json.load(f)
     data_room = data_loaded["rooms"]
 
-    dj = data_loaded["dj"]
     temp = data_loaded["temp_ext"][-20:]
     data = np.array(data_loaded["commandes"])
     data = list(data.reshape(-1))
@@ -84,21 +83,36 @@ def _main_():
 
     # interpolation présent
     # dico data gaz
+    #calcul des dd et des cooling dd
+
 
     conso = conso_gaz[::4]
+    dd = []
+    cdd = []
     l = 12
-    dh = dj[-l:]
-    c = [(conso[i]-conso[i-l])*(2/4) for i in range(l,len(conso),1)]
-    bcg = [[max(dh), min(dh)]]
+    for i in range(l):
+        temp = degres_heure_glissants(data_loaded["temp_ext"][i:i + l], 15, l)
+        if temp<0:
+            temp = 0
+        dd.append(temp)
+        temp = -degres_heure_glissants(data_loaded["temp_ext"][i:i + l], 18, l)
+        if temp < 0:
+            temp = 0
+        cdd.append(temp)
+
+    c = [(conso[i]-conso[i-l])*(2) for i in range(l,len(conso),1)]
+    bcg = [[max(dd), min(dd)]]
+
     try:
-        ag,bg = mk_trend(c,dh)
+        ag,bg = mk_trend(c,dd)
 
     except:
         ag=0
         bg=float(np.mean(c))
+
     # dico data water
     conso = np.array(conso_water)[::4]
-    c = [(conso[i] - conso[i - l])/((10*4)/(2)) for i in range(l, len(conso), 1)]
+    c = [(conso[i] - conso[i - l])/((10)/(2)) for i in range(l, len(conso), 1)]
 
     occ_data = data_loaded["occupation_list"][::4][-l:]
     occ_true_data = data_loaded["True_occupation_list"][::4][-l:]
@@ -106,13 +120,28 @@ def _main_():
     awt, bwt = mk_trend(c,occ_true_data)
     bcw = [[max(occ_data), min(occ_data)],[max(occ_true_data), min(occ_true_data)]]
 
+
     # conso elec
     conso = np.array(conso_elec)[::4]
-    c = [(conso[i] - conso[i - l])/((1000*4)/(2)) for i in range(l, len(conso), 1)]
+    c = [(conso[i] - conso[i - l])/((1000)/(2)) for i in range(l, len(conso), 1)]
     bce = bcw
     ae, be = mk_trend(c,occ_data)
     aet,bet = mk_trend(c,occ_true_data)
 
+    try:
+        aedd,bedd = mk_trend(c,dd)
+
+    except:
+        aedd=0
+        bedd=float(np.mean(c))
+
+    try:
+        aecdd,becdd = mk_trend(c,cdd)
+
+    except:
+        aecdd=0
+        becdd=float(np.mean(c))
+    bcecdd = [[max(cdd),min(cdd)]]
 
 
     # création des labels de commandes
@@ -300,15 +329,16 @@ def _main_():
         page1, page2, page3,page4 = st.tabs(["Trends", "Prediction", "Assistant","deboguage"])
         with page1:
             st.header("Trends")
-
             st.subheader("trend : gaz consumption")
             plot_trend([(ag, bg)], ["actual"], "gaz", bcg)
 
             st.subheader("trend : water consumption")
             plot_trend([(aw, bw), (awt, bwt)], ["actual reservation", "actual true occ"], "water", bcw)
-
             st.subheader("trend : electricity consumption")
             plot_trend([(ae, be), (aet, bet)], ["actual", "actual true occ"], "elec", bce)
+            plot_trend([(aedd,bedd)], ["actual"], "elec_dd", bcg)
+            plot_trend([(aecdd,becdd)], ["actual"], "elec_cdd", bcecdd)
+
         with page2:
             st.header("Decision Trees")
             st.header("Results")

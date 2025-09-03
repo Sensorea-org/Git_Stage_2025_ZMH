@@ -8,4 +8,5 @@ if __name__ == "__main__":
     subprocess.run(f"cd {here}", shell=True)
     script = os.path.join(here, "assistant_0.2.py")
     sys.argv = ["streamlit", "run", script, "--server.headless=true"]
+
     sys.exit(stcli.main())

@@ -1,0 +1,3657 @@
+{
+    "occupation_list": [
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        54.39,
+        53.68,
+        52.97,
+        52.26,
+        51.54,
+        50.83,
+        50.83,
+        50.59,
+        49.88,
+        47.98,
+        46.32,
+        44.89,
+        43.71,
+        43.47,
+        43.47,
+        42.28,
+        41.81,
+        41.57,
+        40.38,
+        39.9,
+        39.67,
+        39.43,
+        39.19,
+        39.19,
+        38.72,
+        38.48,
+        38.0,
+        37.77,
+        37.77,
+        37.77,
+        37.77,
+        37.77,
+        37.77,
+        37.77,
+        37.77,
+        37.77,
+        37.77,
+        37.77,
+        37.77,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.53,
+        37.77,
+        37.77,
+        38.72,
+        38.95,
+        39.19,
+        40.38,
+        41.09,
+        41.81,
+        43.23,
+        44.89
+    ],
+    "True_occupation_list": [
+        33.25,
+        33.25,
+        33.25,
+        33.25,
+        33.25,
+        33.25,
+        33.25,
+        33.25,
+        33.25,
+        33.25,
+        33.49,
+        33.25,
+        33.25,
+        35.87,
+        36.34,
+        36.34,
+        36.1,
+        36.58,
+        36.34,
+        36.34,
+        37.77,
+        36.34,
+        36.58,
+        35.63,
+        34.92,
+        35.87,
+        35.87,
+        35.63,
+        35.39,
+        36.1,
+        35.15,
+        36.82,
+        38.24,
+        38.24,
+        38.0,
+        37.53,
+        37.05,
+        36.82,
+        36.58,
+        34.44,
+        33.49,
+        33.73,
+        33.73,
+        35.15,
+        34.92,
+        35.39,
+        34.68,
+        34.92,
+        27.32,
+        27.32,
+        25.18,
+        24.94,
+        24.7,
+        25.18,
+        25.18,
+        23.52,
+        23.04,
+        23.04,
+        23.28,
+        23.04,
+        23.28,
+        22.57,
+        22.57,
+        21.85,
+        22.09,
+        23.04,
+        21.85,
+        22.09,
+        21.62,
+        21.14,
+        21.14,
+        21.62,
+        20.9,
+        21.38,
+        22.09,
+        21.62,
+        21.38,
+        22.09,
+        22.09,
+        22.09,
+        21.85,
+        21.14,
+        20.67,
+        21.62,
+        20.9,
+        20.43,
+        20.19,
+        20.9,
+        20.43,
+        20.19,
+        20.43,
+        20.67,
+        21.38,
+        23.99,
+        23.52,
+        25.18
+    ],
+    "water consumption": [
+        564592.0,
+        564596.0,
+        564602.0,
+        564631.0,
+        564635.0,
+        564640.0,
+        564642.0,
+        564643.0,
+        565220.0,
+        565291.0,
+        565301.0,
+        565354.0,
+        565358.0,
+        565362.0,
+        565367.0,
+        565376.0,
+        565402.0,
+        565404.0,
+        565407.0,
+        565428.0,
+        565435.0,
+        565438.0,
+        565441.0,
+        565444.0,
+        565473.0,
+        565491.0,
+        565493.0,
+        565497.0,
+        565501.0,
+        565504.0,
+        565508.0,
+        565552.0,
+        565556.0,
+        565559.0,
+        565587.0,
+        565589.0,
+        565592.0,
+        565624.0,
+        565627.0,
+        565629.0,
+        565631.0,
+        565640.0,
+        565677.0,
+        565679.0,
+        565682.0,
+        565684.0,
+        565686.0,
+        565712.0,
+        565715.0,
+        565718.0,
+        565721.0,
+        565751.0,
+        565754.0,
+        565756.0,
+        565786.0,
+        565789.0,
+        565791.0,
+        565792.0,
+        565809.0,
+        565822.0,
+        565825.0,
+        565851.0,
+        565852.0,
+        565853.0,
+        565853.0,
+        565854.0,
+        565854.0,
+        565854.0,
+        565889.0,
+        565889.0,
+        565889.0,
+        565889.0,
+        565890.0,
+        565890.0,
+        565890.0,
+        565890.0,
+        565891.0,
+        565891.0,
+        565891.0,
+        565911.0,
+        565917.0,
+        565917.0,
+        565918.0,
+        565947.0,
+        565950.0,
+        565952.0,
+        565955.0,
+        565957.0,
+        565962.0,
+        565994.0,
+        566016.0,
+        566039.0,
+        566086.0,
+        566095.0,
+        566130.0,
+        566136.0
+    ],
+    "electricity consumption": [
+        26579888128.0,
+        26579990528.0,
+        26580088832.0,
+        26580191232.0,
+        26580287488.0,
+        26580383744.0,
+        26580484096.0,
+        26580582400.0,
+        26585544704.0,
+        26585858048.0,
+        26586038272.0,
+        26586132480.0,
+        26586230784.0,
+        26586335232.0,
+        26586437632.0,
+        26586533888.0,
+        26586732544.0,
+        26586834944.0,
+        26586929152.0,
+        26587025408.0,
+        26587111424.0,
+        26587205632.0,
+        26587295744.0,
+        26587398144.0,
+        26587506688.0,
+        26587607040.0,
+        26587705344.0,
+        26587807744.0,
+        26587908096.0,
+        26588008448.0,
+        26588104704.0,
+        26588536832.0,
+        26588628992.0,
+        26588715008.0,
+        26588809216.0,
+        26588893184.0,
+        26588983296.0,
+        26589079552.0,
+        26589167616.0,
+        26589259776.0,
+        26589345792.0,
+        26589446144.0,
+        26589534208.0,
+        26589626368.0,
+        26589720576.0,
+        26589808640.0,
+        26589890560.0,
+        26589978624.0,
+        26590064640.0,
+        26590154752.0,
+        26590240768.0,
+        26590322688.0,
+        26590410752.0,
+        26590488576.0,
+        26590562304.0,
+        26590631936.0,
+        26590699520.0,
+        26590765056.0,
+        26590826496.0,
+        26590896128.0,
+        26590957568.0,
+        26591012864.0,
+        26591070208.0,
+        26591125504.0,
+        26591182848.0,
+        26591238144.0,
+        26591291392.0,
+        26591344640.0,
+        26591401984.0,
+        26591455232.0,
+        26591506432.0,
+        26591559680.0,
+        26591612928.0,
+        26591668224.0,
+        26591723520.0,
+        26591772672.0,
+        26591825920.0,
+        26591881216.0,
+        26591942656.0,
+        26592008192.0,
+        26592067584.0,
+        26592131072.0,
+        26592194560.0,
+        26592264192.0,
+        26592337920.0,
+        26592415744.0,
+        26592495616.0,
+        26592573440.0,
+        26592653312.0,
+        26592739328.0,
+        26592817152.0,
+        26592899072.0,
+        26592989184.0,
+        26593077248.0,
+        26593167360.0,
+        26593263616.0
+    ],
+    "gaz consumption": [
+        8664877.0,
+        8664955.0,
+        8665031.0,
+        8665107.0,
+        8665181.0,
+        8665255.0,
+        8665328.0,
+        8665402.0,
+        8670119.0,
+        8670448.0,
+        8670629.0,
+        8670721.0,
+        8670811.0,
+        8670900.0,
+        8670987.0,
+        8671073.0,
+        8671237.0,
+        8671321.0,
+        8671405.0,
+        8671489.0,
+        8671572.0,
+        8671655.0,
+        8671739.0,
+        8671822.0,
+        8671905.0,
+        8671989.0,
+        8672071.0,
+        8672152.0,
+        8672230.0,
+        8672312.0,
+        8672391.0,
+        8672735.0,
+        8672813.0,
+        8672892.0,
+        8672972.0,
+        8673051.0,
+        8673131.0,
+        8673212.0,
+        8673291.0,
+        8673375.0,
+        8673456.0,
+        8673537.0,
+        8673618.0,
+        8673696.0,
+        8673775.0,
+        8673854.0,
+        8673934.0,
+        8674012.0,
+        8674090.0,
+        8674167.0,
+        8674248.0,
+        8674328.0,
+        8674412.0,
+        8674497.0,
+        8674587.0,
+        8674678.0,
+        8674766.0,
+        8674856.0,
+        8674947.0,
+        8675035.0,
+        8675121.0,
+        8675207.0,
+        8675291.0,
+        8675374.0,
+        8675457.0,
+        8675540.0,
+        8675622.0,
+        8675705.0,
+        8675789.0,
+        8675872.0,
+        8675954.0,
+        8676039.0,
+        8676120.0,
+        8676203.0,
+        8676284.0,
+        8676366.0,
+        8676450.0,
+        8676534.0,
+        8676619.0,
+        8676703.0,
+        8676786.0,
+        8676869.0,
+        8676952.0,
+        8677035.0,
+        8677118.0,
+        8677201.0,
+        8677287.0,
+        8677372.0,
+        8677456.0,
+        8677542.0,
+        8677633.0,
+        8677729.0,
+        8677827.0,
+        8677924.0,
+        8678023.0,
+        8678120.0
+    ],
+    "temp_ext": [
+        19.0,
+        19.0,
+        19.0,
+        17.0,
+        18.0,
+        15.0,
+        15.0,
+        15.0,
+        16.0,
+        18.0,
+        20.0,
+        21.0,
+        21.0,
+        22.0,
+        22.0,
+        23.0,
+        23.0,
+        14.0,
+        14.0,
+        15.0,
+        16.0,
+        16.0,
+        17.0,
+        19.0,
+        19.0,
+        19.0,
+        20.0,
+        21.0,
+        21.0,
+        21.0,
+        19.0,
+        18.0,
+        16.0,
+        16.0,
+        17.0,
+        17.0,
+        17.0,
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        17.0,
+        17.0,
+        16.0,
+        16.0,
+        16.0,
+        17.0,
+        17.0
+    ],
+    "dj": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "commandes": [
+        [
+            69.6,
+            73.0,
+            66.8,
+            73.2,
+            71.8,
+            73.2,
+            72.4,
+            56.8,
+            61.6,
+            72.6,
+            78.0,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            68.8,
+            73.0,
+            66.8,
+            73.2,
+            71.8,
+            73.2,
+            71.6,
+            56.8,
+            61.6,
+            72.6,
+            78.0,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            68.8,
+            73.0,
+            66.8,
+            73.2,
+            71.8,
+            73.2,
+            72.4,
+            56.8,
+            61.6,
+            72.6,
+            78.6,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            69.6,
+            73.8,
+            66.8,
+            74.0,
+            71.8,
+            73.2,
+            72.4,
+            56.8,
+            61.6,
+            72.6,
+            78.0,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            69.6,
+            73.8,
+            66.8,
+            74.0,
+            72.4,
+            73.2,
+            72.4,
+            56.8,
+            61.6,
+            72.6,
+            78.0,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            69.6,
+            73.8,
+            66.8,
+            74.0,
+            72.4,
+            73.2,
+            72.4,
+            56.8,
+            61.6,
+            72.6,
+            78.0,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            69.6,
+            73.0,
+            66.8,
+            74.0,
+            71.8,
+            73.2,
+            72.4,
+            56.8,
+            61.6,
+            72.6,
+            78.6,
+            0.5012,
+            0.7023999999999999,
+            0.6995,
+            0.0
+        ],
+        [
+            69.6,
+            73.8,
+            66.8,
+            74.0,
+            71.8,
+            73.2,
+            72.4,
+            56.8,
+            61.6,
+            72.6,
+            78.6,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            69.6,
+            73.8,
+            66.8,
+            74.0,
+            71.0,
+            73.2,
+            72.4,
+            56.8,
+            61.6,
+            72.6,
+            78.6,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            69.6,
+            73.8,
+            66.8,
+            74.0,
+            71.8,
+            73.2,
+            72.4,
+            56.8,
+            61.6,
+            72.6,
+            78.0,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            69.6,
+            73.0,
+            66.8,
+            74.0,
+            71.8,
+            73.2,
+            72.4,
+            56.8,
+            61.6,
+            72.6,
+            78.6,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            69.6,
+            73.0,
+            66.8,
+            73.2,
+            71.0,
+            73.2,
+            72.4,
+            56.8,
+            61.6,
+            71.8,
+            78.0,
+            0.5012,
+            0.7023999999999999,
+            0.6995,
+            0.0
+        ],
+        [
+            68.8,
+            73.0,
+            66.8,
+            73.2,
+            71.0,
+            73.2,
+            71.6,
+            56.8,
+            61.6,
+            71.8,
+            78.0,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            68.8,
+            72.4,
+            66.0,
+            72.6,
+            71.0,
+            72.6,
+            71.6,
+            56.8,
+            61.6,
+            71.8,
+            78.0,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            68.2,
+            71.6,
+            65.4,
+            71.8,
+            69.6,
+            71.8,
+            71.0,
+            56.8,
+            61.6,
+            71.2,
+            77.2,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            67.4,
+            71.6,
+            64.6,
+            71.8,
+            69.0,
+            71.2,
+            70.4,
+            56.8,
+            61.6,
+            70.4,
+            77.2,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            66.8,
+            71.0,
+            64.0,
+            71.2,
+            68.2,
+            70.4,
+            69.6,
+            56.8,
+            61.0,
+            69.8,
+            76.6,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            66.8,
+            70.4,
+            64.0,
+            70.4,
+            67.0,
+            70.4,
+            69.6,
+            56.0,
+            61.0,
+            69.0,
+            76.6,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            66.8,
+            70.4,
+            63.4,
+            70.4,
+            67.6,
+            70.4,
+            69.0,
+            56.0,
+            61.0,
+            69.0,
+            76.0,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ],
+        [
+            66.8,
+            70.4,
+            63.4,
+            70.4,
+            67.6,
+            69.8,
+            69.0,
+            56.0,
+            61.0,
+            69.0,
+            76.0,
+            0.5012,
+            0.6981,
+            0.6995,
+            0.0
+        ]
+    ],
+    "time": 8,
+    "rooms": {
+        "907": [
+            "MCS BACnet stack\n/TH_CO2_907-temperature : 22.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_907-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_907-co2 : 844.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_907-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_907-light : 115.00 luxes"
+        ],
+        "906": [
+            "MCS BACnet stack\n/TH_CO2_906-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_906-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_906-co2 : 712.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_906-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_906-light : 0.00 luxes"
+        ],
+        "904": [
+            "MCS BACnet stack\n/TH_CO2_904-temperature : 18.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_904-humidity : 72.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_904-co2 : 739.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_904-motion : 1.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_904-light : 10.00 luxes"
+        ],
+        "905": [
+            "MCS BACnet stack\n/TH_CO2_905-temperature : 19.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_905-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_905-co2 : 622.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_905-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_905-light : 5.00 luxes"
+        ],
+        "902": [
+            "MCS BACnet stack\n/TH_CO2_902-temperature : 19.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_902-humidity : 69.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_902-co2 : 750.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_902-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_902-light : 5.00 luxes"
+        ],
+        "901": [
+            "MCS BACnet stack\n/TH_CO2_901-temperature : 19.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_901-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_901-co2 : 790.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_901-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_901-light : 0.00 luxes"
+        ],
+        "910": [
+            "MCS BACnet stack\n/TH_CO2_910-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_910-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_910-co2 : 498.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_910-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_910-light : 130.00 luxes"
+        ],
+        "909": [
+            "MCS BACnet stack\n/TH_CO2_909-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_909-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_909-co2 : 430.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_909-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_909-light : 0.00 luxes"
+        ],
+        "908": [
+            "MCS BACnet stack\n/TH_CO2_908-temperature : 18.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_908-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_908-co2 : 576.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_908-motion : 1.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_908-light : 0.00 luxes"
+        ],
+        "903": [
+            "MCS BACnet stack\n/TH_CO2_903-temperature : 20.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_903-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_903-co2 : 718.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_903-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_903-light : 35.00 luxes"
+        ],
+        "919": [
+            "MCS BACnet stack\n/TH_CO2_919-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_919-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_919-co2 : 530.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_919-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_919-light : 30.00 luxes"
+        ],
+        "912": [
+            "MCS BACnet stack\n/TH_CO2_912-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_912-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_912-co2 : 492.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_912-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_912-light : 0.00 luxes"
+        ],
+        "913": [
+            "MCS BACnet stack\n/TH_CO2_913-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_913-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_913-co2 : 912.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_913-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_913-light : 0.00 luxes"
+        ],
+        "915": [
+            "MCS BACnet stack\n/TH_CO2_915-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_915-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_915-co2 : 617.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_915-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_915-light : 0.00 luxes"
+        ],
+        "914": [
+            "MCS BACnet stack\n/TH_CO2_914-temperature : 23.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_914-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_914-co2 : 790.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_914-motion : 1.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_914-light : 95.00 luxes"
+        ],
+        "918": [
+            "MCS BACnet stack\n/TH_CO2_918-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_918-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_918-co2 : 552.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_918-motion : 5.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_918-light : 165.00 luxes"
+        ],
+        "916": [
+            "MCS BACnet stack\n/TH_CO2_916-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_916-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_916-co2 : 915.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_916-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_916-light : 5.00 luxes"
+        ],
+        "922": [
+            "MCS BACnet stack\n/TH_CO2_922-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_922-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_922-co2 : 1079.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_922-motion : 1.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_922-light : 0.00 luxes"
+        ],
+        "917": [
+            "MCS BACnet stack\n/TH_CO2_917-temperature : 21.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_917-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_917-co2 : 597.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_917-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_917-light : 0.00 luxes"
+        ],
+        "920": [
+            "MCS BACnet stack\n/TH_CO2_920-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_920-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_920-co2 : 562.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_920-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_920-light : 10.00 luxes"
+        ],
+        "921": [
+            "MCS BACnet stack\n/TH_CO2_921-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_921-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_921-co2 : 572.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_921-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_921-light : 85.00 luxes"
+        ],
+        "815": [
+            "MCS BACnet stack\n/TH_CO2_815-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_815-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_815-co2 : 750.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_815-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_815-light : 10.00 luxes"
+        ],
+        "816": [
+            "MCS BACnet stack\n/TH_CO2_816-temperature : 22.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_816-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_816-co2 : 715.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_816-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_816-light : 85.00 luxes"
+        ],
+        "805": [
+            "MCS BACnet stack\n/TH_CO2_805-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_805-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_805-co2 : 624.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_805-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_805-light : 100.00 luxes"
+        ],
+        "813": [
+            "MCS BACnet stack\n/TH_CO2_813-temperature : 19.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_813-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_813-co2 : 911.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_813-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_813-light : 115.00 luxes"
+        ],
+        "807": [
+            "MCS BACnet stack\n/TH_CO2_807-temperature : 20.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_807-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_807-co2 : 462.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_807-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_807-light : 0.00 luxes"
+        ],
+        "819": [
+            "MCS BACnet stack\n/TH_CO2_819-temperature : 19.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_819-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_819-co2 : 779.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_819-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_819-light : 0.00 luxes"
+        ],
+        "801": [
+            "MCS BACnet stack\n/TH_CO2_801-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_801-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_801-co2 : 435.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_801-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_801-light : 60.00 luxes"
+        ],
+        "802": [
+            "MCS BACnet stack\n/TH_CO2_802-temperature : 20.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_802-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_802-co2 : 478.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_802-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_802-light : 0.00 luxes"
+        ],
+        "817": [
+            "MCS BACnet stack\n/TH_CO2_817-temperature : 20.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_817-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_817-co2 : 621.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_817-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_817-light : 0.00 luxes"
+        ],
+        "809": [
+            "MCS BACnet stack\n/TH_CO2_809-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_809-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_809-co2 : 711.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_809-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_809-light : 0.00 luxes"
+        ],
+        "821": [
+            "MCS BACnet stack\n/TH_CO2_821-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_821-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_821-co2 : 493.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_821-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_821-light : 0.00 luxes"
+        ],
+        "820": [
+            "MCS BACnet stack\n/TH_CO2_820-temperature : 21.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_820-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_820-co2 : 618.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_820-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_820-light : 55.00 luxes"
+        ],
+        "812": [
+            "MCS BACnet stack\n/TH_CO2_812-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_812-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_812-co2 : 546.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_812-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_812-light : 5.00 luxes"
+        ],
+        "810": [
+            "MCS BACnet stack\n/TH_CO2_810-temperature : 22.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_810-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_810-co2 : 516.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_810-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_810-light : 135.00 luxes"
+        ],
+        "804": [
+            "MCS BACnet stack\n/TH_CO2_804-temperature : 20.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_804-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_804-co2 : 505.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_804-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_804-light : 5.00 luxes"
+        ],
+        "818": [
+            "MCS BACnet stack\n/TH_CO2_818-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_818-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_818-co2 : 414.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_818-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_818-light : 95.00 luxes"
+        ],
+        "803": [
+            "MCS BACnet stack\n/TH_CO2_803-temperature : 19.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_803-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_803-co2 : 490.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_803-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_803-light : 0.00 luxes"
+        ],
+        "808": [
+            "MCS BACnet stack\n/TH_CO2_808-temperature : 20.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_808-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_808-co2 : 527.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_808-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_808-light : 15.00 luxes"
+        ],
+        "814": [
+            "MCS BACnet stack\n/TH_CO2_814-temperature : 21.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_814-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_814-co2 : 828.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_814-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_814-light : 10.00 luxes"
+        ],
+        "822": [
+            "MCS BACnet stack\n/TH_CO2_822-temperature : 20.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_822-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_822-co2 : 393.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_822-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_822-light : 40.00 luxes"
+        ],
+        "806": [
+            "MCS BACnet stack\n/TH_CO2_806-temperature : 19.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_806-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_806-co2 : 508.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_806-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_806-light : 0.00 luxes"
+        ],
+        "301": [
+            "MCS BACnet stack\n/TH_CO2_301-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_301-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_301-co2 : 499.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_301-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_301-light : 0.00 luxes"
+        ],
+        "302": [
+            "MCS BACnet stack\n/TH_CO2_302-temperature : 25.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_302-humidity : 46.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_302-co2 : 648.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_302-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_302-light : 20.00 luxes"
+        ],
+        "306": [
+            "MCS BACnet stack\n/TH_CO2_306-temperature : 19.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_306-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_306-co2 : 432.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_306-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_306-light : 5.00 luxes"
+        ],
+        "307": [
+            "MCS BACnet stack\n/TH_CO2_307-temperature : 17.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_307-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_307-co2 : 451.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_307-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_307-light : 0.00 luxes"
+        ],
+        "309": [
+            "MCS BACnet stack\n/TH_CO2_309-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_309-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_309-co2 : 491.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_309-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_309-light : 30.00 luxes"
+        ],
+        "312": [
+            "MCS BACnet stack\n/TH_CO2_312-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_312-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_312-co2 : 445.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_312-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_312-light : 0.00 luxes"
+        ],
+        "316": [
+            "MCS BACnet stack\n/TH_CO2_316-temperature : 20.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_316-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_316-co2 : 485.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_316-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_316-light : 0.00 luxes"
+        ],
+        "318": [
+            "MCS BACnet stack\n/TH_CO2_318-temperature : 20.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_318-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_318-co2 : 542.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_318-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_318-light : 5.00 luxes"
+        ],
+        "320": [
+            "MCS BACnet stack\n/TH_CO2_320-temperature : 19.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_320-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_320-co2 : 451.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_320-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_320-light : 0.00 luxes"
+        ],
+        "322": [
+            "MCS BACnet stack\n/TH_CO2_322-temperature : 20.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_322-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_322-co2 : 539.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_322-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_322-light : 5.00 luxes"
+        ],
+        "401": [
+            "MCS BACnet stack\n/TH_CO2_401-temperature : 24.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_401-humidity : 50.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_401-co2 : 589.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_401-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_401-light : 0.00 luxes"
+        ],
+        "402": [
+            "MCS BACnet stack\n/TH_CO2_402-temperature : 22.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_402-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_402-co2 : 545.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_402-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_402-light : 10.00 luxes"
+        ],
+        "403": [
+            "MCS BACnet stack\n/TH_CO2_403-temperature : 20.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_403-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_403-co2 : 509.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_403-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_403-light : 0.00 luxes"
+        ],
+        "404": [
+            "MCS BACnet stack\n/TH_CO2_404-temperature : 20.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_404-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_404-co2 : 524.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_404-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_404-light : 5.00 luxes"
+        ],
+        "405": [
+            "MCS BACnet stack\n/TH_CO2_405-temperature : 19.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_405-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_405-co2 : 528.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_405-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_405-light : 5.00 luxes"
+        ],
+        "406": [
+            "MCS BACnet stack\n/TH_CO2_406-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_406-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_406-co2 : 601.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_406-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_406-light : 10.00 luxes"
+        ],
+        "409": [
+            "MCS BACnet stack\n/TH_CO2_409-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_409-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_409-co2 : 565.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_409-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_409-light : 0.00 luxes"
+        ],
+        "412": [
+            "MCS BACnet stack\n/TH_CO2_412-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_412-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_412-co2 : 530.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_412-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_412-light : 20.00 luxes"
+        ],
+        "413": [
+            "MCS BACnet stack\n/TH_CO2_413-temperature : 19.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_413-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_413-co2 : 453.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_413-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_413-light : 5.00 luxes"
+        ],
+        "415": [
+            "MCS BACnet stack\n/TH_CO2_415-temperature : 18.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_415-humidity : 66.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_415-co2 : 882.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_415-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_415-light : 5.00 luxes"
+        ],
+        "416": [
+            "MCS BACnet stack\n/TH_CO2_416-temperature : 18.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_416-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_416-co2 : 522.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_416-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_416-light : 5.00 luxes"
+        ],
+        "417": [
+            "MCS BACnet stack\n/TH_CO2_417-temperature : 18.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_417-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_417-co2 : 595.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_417-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_417-light : 0.00 luxes"
+        ],
+        "421": [
+            "MCS BACnet stack\n/TH_CO2_421-temperature : 19.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_421-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_421-co2 : 520.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_421-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_421-light : 25.00 luxes"
+        ],
+        "422": [
+            "MCS BACnet stack\n/TH_CO2_422-temperature : 20.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_422-humidity : 69.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_422-co2 : 704.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_422-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_422-light : 10.00 luxes"
+        ],
+        "502": [
+            "MCS BACnet stack\n/TH_CO2_502-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_502-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_502-co2 : 632.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_502-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_502-light : 5.00 luxes"
+        ],
+        "505": [
+            "MCS BACnet stack\n/TH_CO2_505-temperature : 20.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_505-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_505-co2 : 524.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_505-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_505-light : 5.00 luxes"
+        ],
+        "507": [
+            "MCS BACnet stack\n/TH_CO2_507-temperature : 20.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_507-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_507-co2 : 474.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_507-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_507-light : 5.00 luxes"
+        ],
+        "509": [
+            "MCS BACnet stack\n/TH_CO2_509-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_509-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_509-co2 : 528.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_509-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_509-light : 0.00 luxes"
+        ],
+        "510": [
+            "MCS BACnet stack\n/TH_CO2_510-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_510-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_510-co2 : 683.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_510-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_510-light : 120.00 luxes"
+        ],
+        "512": [
+            "MCS BACnet stack\n/TH_CO2_512-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_512-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_512-co2 : 492.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_512-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_512-light : 5.00 luxes"
+        ],
+        "515": [
+            "MCS BACnet stack\n/TH_CO2_515-temperature : 20.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_515-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_515-co2 : 419.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_515-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_515-light : 0.00 luxes"
+        ],
+        "1101": [
+            "MCS BACnet stack\n/TH_CO2_1101-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1101-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1101-co2 : 591.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1101-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1101-light : 0.00 luxes"
+        ],
+        "1102": [
+            "MCS BACnet stack\n/TH_CO2_1102-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1102-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1102-co2 : 562.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1102-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1102-light : 75.00 luxes"
+        ],
+        "1104": [
+            "MCS BACnet stack\n/TH_CO2_1104-temperature : 18.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1104-humidity : 70.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1104-co2 : 691.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1104-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1104-light : 105.00 luxes"
+        ],
+        "1105": [
+            "MCS BACnet stack\n/TH_CO2_1105-temperature : 22.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1105-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1105-co2 : 677.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1105-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1105-light : 130.00 luxes"
+        ],
+        "1106": [
+            "MCS BACnet stack\n/TH_CO2_1106-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1106-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1106-co2 : 538.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1106-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1106-light : 0.00 luxes"
+        ],
+        "1109": [
+            "MCS BACnet stack\n/TH_CO2_1109-temperature : 19.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1109-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1109-co2 : 513.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1109-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1109-light : 5.00 luxes"
+        ],
+        "1110": [
+            "MCS BACnet stack\n/TH_CO2_1110-temperature : 20.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1110-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1110-co2 : 576.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1110-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1110-light : 0.00 luxes"
+        ],
+        "1112": [
+            "MCS BACnet stack\n/TH_CO2_1112-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1112-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1112-co2 : 522.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1112-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1112-light : 55.00 luxes"
+        ],
+        "1113": [
+            "MCS BACnet stack\n/TH_CO2_1113-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1113-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1113-co2 : 532.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1113-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1113-light : 80.00 luxes"
+        ],
+        "1118": [
+            "MCS BACnet stack\n/TH_CO2_1118-temperature : 22.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1118-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1118-co2 : 838.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1118-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1118-light : 5.00 luxes"
+        ],
+        "1120": [
+            "MCS BACnet stack\n/TH_CO2_1120-temperature : 22.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1120-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1120-co2 : 665.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1120-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1120-light : 5.00 luxes"
+        ],
+        "1201": [
+            "MCS BACnet stack\n/TH_CO2_1201-temperature : 20.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1201-humidity : 70.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1201-co2 : 546.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1201-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1201-light : 75.00 luxes"
+        ],
+        "1202": [
+            "MCS BACnet stack\n/TH_CO2_1202-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1202-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1202-co2 : 915.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1202-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1202-light : 5.00 luxes"
+        ],
+        "1204": [
+            "MCS BACnet stack\n/TH_CO2_1204-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1204-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1204-co2 : 333.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1204-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1204-light : 0.00 luxes"
+        ],
+        "1205": [
+            "MCS BACnet stack\n/TH_CO2_1205-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1205-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1205-co2 : 661.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1205-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1205-light : 0.00 luxes"
+        ],
+        "1206": [
+            "MCS BACnet stack\n/TH_CO2_1206-temperature : 21.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1206-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1206-co2 : 442.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1206-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1206-light : 55.00 luxes"
+        ],
+        "1207": [
+            "MCS BACnet stack\n/TH_CO2_1207-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1207-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1207-co2 : 301.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1207-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1207-light : 0.00 luxes"
+        ],
+        "1209": [
+            "MCS BACnet stack\n/TH_CO2_1209-temperature : 22.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1209-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1209-co2 : 574.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1209-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1209-light : 0.00 luxes"
+        ],
+        "1212": [
+            "MCS BACnet stack\n/TH_CO2_1212-temperature : 18.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1212-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1212-co2 : 623.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1212-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1212-light : 0.00 luxes"
+        ],
+        "1215": [
+            "MCS BACnet stack\n/TH_CO2_1215-temperature : 19.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1215-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1215-co2 : 433.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1215-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1215-light : 0.00 luxes"
+        ],
+        "1216": [
+            "MCS BACnet stack\n/TH_CO2_1216-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1216-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1216-co2 : 497.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1216-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1216-light : 45.00 luxes"
+        ],
+        "1218": [
+            "MCS BACnet stack\n/TH_CO2_1218-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1218-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1218-co2 : 627.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1218-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1218-light : 5.00 luxes"
+        ],
+        "1219": [
+            "MCS BACnet stack\n/TH_CO2_1219-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1219-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1219-co2 : 537.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1219-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1219-light : 45.00 luxes"
+        ],
+        "1220": [
+            "MCS BACnet stack\n/TH_CO2_1220-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1220-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1220-co2 : 448.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1220-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1220-light : 0.00 luxes"
+        ],
+        "1221": [
+            "MCS BACnet stack\n/TH_CO2_1221-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1221-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1221-co2 : 539.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1221-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1221-light : 5.00 luxes"
+        ],
+        "1222": [
+            "MCS BACnet stack\n/TH_CO2_1222-temperature : 19.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1222-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1222-co2 : 738.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1222-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1222-light : 0.00 luxes"
+        ],
+        "1303": [
+            "MCS BACnet stack\n/TH_CO2_1303-temperature : 19.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1303-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1303-co2 : 148.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1303-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1303-light : 0.00 luxes"
+        ],
+        "1304": [
+            "MCS BACnet stack\n/TH_CO2_1304-temperature : 20.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1304-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1304-co2 : 192.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1304-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1304-light : 90.00 luxes"
+        ],
+        "1305": [
+            "MCS BACnet stack\n/TH_CO2_1305-temperature : 22.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1305-humidity : 46.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1305-co2 : 880.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1305-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1305-light : 35.00 luxes"
+        ],
+        "1306": [
+            "MCS BACnet stack\n/TH_CO2_1306-temperature : 21.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1306-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1306-co2 : 396.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1306-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1306-light : 5.00 luxes"
+        ],
+        "1307": [
+            "MCS BACnet stack\n/TH_CO2_1307-temperature : 19.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1307-humidity : 66.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1307-co2 : 524.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1307-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1307-light : 5.00 luxes"
+        ],
+        "1310": [
+            "MCS BACnet stack\n/TH_CO2_1310-temperature : 22.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1310-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1310-co2 : 446.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1310-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1310-light : 0.00 luxes"
+        ],
+        "1312": [
+            "MCS BACnet stack\n/TH_CO2_1312-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1312-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1312-co2 : 586.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1312-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1312-light : 0.00 luxes"
+        ],
+        "1315": [
+            "MCS BACnet stack\n/TH_CO2_1315-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1315-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1315-co2 : 491.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1315-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1315-light : 0.00 luxes"
+        ],
+        "1317": [
+            "MCS BACnet stack\n/TH_CO2_1317-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1317-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1317-co2 : 524.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1317-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1317-light : 0.00 luxes"
+        ],
+        "1318": [
+            "MCS BACnet stack\n/TH_CO2_1318-temperature : 22.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1318-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1318-co2 : 997.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1318-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1318-light : 10.00 luxes"
+        ],
+        "1321": [
+            "MCS BACnet stack\n/TH_CO2_1321-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1321-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1321-co2 : 518.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1321-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1321-light : 0.00 luxes"
+        ],
+        "1322": [
+            "MCS BACnet stack\n/TH_CO2_1322-temperature : 21.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1322-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1322-co2 : 524.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1322-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1322-light : 30.00 luxes"
+        ],
+        "1410": [
+            "MCS BACnet stack\n/TH_CO2_1410-temperature : 22.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1410-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1410-co2 : 651.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1410-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1410-light : 0.00 luxes"
+        ],
+        "1412": [
+            "MCS BACnet stack\n/TH_CO2_1412-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1412-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1412-co2 : 594.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1412-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1412-light : 0.00 luxes"
+        ],
+        "1413": [
+            "MCS BACnet stack\n/TH_CO2_1413-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1413-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1413-co2 : 735.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1413-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1413-light : 100.00 luxes"
+        ],
+        "1414": [
+            "MCS BACnet stack\n/TH_CO2_1414-temperature : 22.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1414-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1414-co2 : 832.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1414-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1414-light : 85.00 luxes"
+        ],
+        "1415": [
+            "MCS BACnet stack\n/TH_CO2_1415-temperature : 19.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1415-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1415-co2 : 696.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1415-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1415-light : 60.00 luxes"
+        ],
+        "1416": [
+            "MCS BACnet stack\n/TH_CO2_1416-temperature : 22.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1416-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1416-co2 : 666.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1416-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1416-light : 0.00 luxes"
+        ],
+        "1417": [
+            "MCS BACnet stack\n/TH_CO2_1417-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1417-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1417-co2 : 936.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1417-motion : 5.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1417-light : 25.00 luxes"
+        ],
+        "1422": [
+            "MCS BACnet stack\n/TH_CO2_1422-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1422-humidity : 72.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1422-co2 : 1091.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1422-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1422-light : 85.00 luxes"
+        ],
+        "1501": [
+            "MCS BACnet stack\n/TH_CO2_1501-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1501-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1501-co2 : 294.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1501-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1501-light : 5.00 luxes"
+        ],
+        "1510": [
+            "MCS BACnet stack\n/TH_CO2_1510-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1510-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1510-co2 : 464.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1510-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1510-light : 0.00 luxes"
+        ],
+        "1512": [
+            "MCS BACnet stack\n/TH_CO2_1512-temperature : 22.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1512-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1512-co2 : 532.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1512-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1512-light : 95.00 luxes"
+        ],
+        "1513": [
+            "MCS BACnet stack\n/TH_CO2_1513-temperature : 23.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1513-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1513-co2 : 550.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1513-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1513-light : 105.00 luxes"
+        ],
+        "1514": [
+            "MCS BACnet stack\n/TH_CO2_1514-temperature : 22.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1514-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1514-co2 : 488.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1514-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1514-light : 10.00 luxes"
+        ],
+        "1515": [
+            "MCS BACnet stack\n/TH_CO2_1515-temperature : 18.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1515-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1515-co2 : 559.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1515-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1515-light : 5.00 luxes"
+        ],
+        "1521": [
+            "MCS BACnet stack\n/TH_CO2_1521-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1521-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1521-co2 : 557.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1521-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1521-light : 0.00 luxes"
+        ],
+        "1601": [
+            "MCS BACnet stack\n/TH_CO2_1601-temperature : 22.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1601-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1601-co2 : 483.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1601-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1601-light : 0.00 luxes"
+        ],
+        "1602": [
+            "MCS BACnet stack\n/TH_CO2_1602-temperature : 20.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1602-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1602-co2 : 601.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1602-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1602-light : 0.00 luxes"
+        ],
+        "1606": [
+            "MCS BACnet stack\n/TH_CO2_1606-temperature : 20.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1606-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1606-co2 : 842.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1606-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1606-light : 10.00 luxes"
+        ],
+        "1620": [
+            "MCS BACnet stack\n/TH_CO2_1620-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1620-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1620-co2 : 457.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1620-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1620-light : 0.00 luxes"
+        ],
+        "1622": [
+            "MCS BACnet stack\n/TH_CO2_1622-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1622-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1622-co2 : 797.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1622-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1622-light : 50.00 luxes"
+        ],
+        "1701": [
+            "MCS BACnet stack\n/TH_CO2_1701-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1701-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1701-co2 : 607.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1701-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1701-light : 45.00 luxes"
+        ],
+        "1706": [
+            "MCS BACnet stack\n/TH_CO2_1706-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1706-humidity : 52.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1706-co2 : 498.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1706-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1706-light : 75.00 luxes"
+        ],
+        "1715": [
+            "MCS BACnet stack\n/TH_CO2_1715-temperature : 19.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1715-humidity : 66.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1715-co2 : 1082.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1715-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1715-light : 0.00 luxes"
+        ],
+        "1716": [
+            "MCS BACnet stack\n/TH_CO2_1716-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1716-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1716-co2 : 859.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1716-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1716-light : 90.00 luxes"
+        ],
+        "1720": [
+            "MCS BACnet stack\n/TH_CO2_1720-temperature : 18.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1720-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1720-co2 : 505.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1720-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1720-light : 0.00 luxes"
+        ],
+        "1722": [
+            "MCS BACnet stack\n/TH_CO2_1722-temperature : 22.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1722-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1722-co2 : 552.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1722-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1722-light : 130.00 luxes"
+        ],
+        "1801": [
+            "MCS BACnet stack\n/TH_CO2_1801-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1801-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1801-co2 : 729.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1801-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1801-light : 55.00 luxes"
+        ],
+        "1803": [
+            "MCS BACnet stack\n/TH_CO2_1803-temperature : 19.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1803-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1803-co2 : 597.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1803-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1803-light : 0.00 luxes"
+        ],
+        "1805": [
+            "MCS BACnet stack\n/TH_CO2_1805-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1805-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1805-co2 : 546.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1805-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1805-light : 5.00 luxes"
+        ],
+        "1808": [
+            "MCS BACnet stack\n/TH_CO2_1808-temperature : 21.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1808-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1808-co2 : 819.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1808-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1808-light : 50.00 luxes"
+        ],
+        "1816": [
+            "MCS BACnet stack\n/TH_CO2_1816-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1816-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1816-co2 : 575.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1816-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1816-light : 40.00 luxes"
+        ],
+        "1817": [
+            "MCS BACnet stack\n/TH_CO2_1817-temperature : 20.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1817-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1817-co2 : 724.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1817-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1817-light : 5.00 luxes"
+        ],
+        "1819": [
+            "MCS BACnet stack\n/TH_CO2_1819-temperature : 22.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1819-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1819-co2 : 645.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1819-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1819-light : 5.00 luxes"
+        ],
+        "1820": [
+            "MCS BACnet stack\n/TH_CO2_1820-temperature : 19.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1820-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1820-co2 : 501.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1820-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1820-light : 170.00 luxes"
+        ],
+        "1901": [
+            "MCS BACnet stack\n/TH_CO2_1901-temperature : 22.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1901-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1901-co2 : 553.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1901-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1901-light : 0.00 luxes"
+        ],
+        "2002": [
+            "MCS BACnet stack\n/TH_CO2_2002-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2002-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2002-co2 : 725.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2002-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2002-light : 0.00 luxes"
+        ],
+        "2005": [
+            "MCS BACnet stack\n/TH_CO2_2005-temperature : 22.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2005-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2005-co2 : 688.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2005-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2005-light : 0.00 luxes"
+        ],
+        "2010": [
+            "MCS BACnet stack\n/TH_CO2_2010-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2010-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2010-co2 : 791.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2010-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2010-light : 395.00 luxes"
+        ],
+        "2012": [
+            "MCS BACnet stack\n/TH_CO2_2012-temperature : 22.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2012-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2012-co2 : 688.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2012-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2012-light : 100.00 luxes"
+        ],
+        "2019": [
+            "MCS BACnet stack\n/TH_CO2_2019-temperature : 20.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2019-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2019-co2 : 75.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2019-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2019-light : 5.00 luxes"
+        ],
+        "2201": [
+            "MCS BACnet stack\n/TH_CO2_2201-temperature : 22.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2201-humidity : 51.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2201-co2 : 589.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2201-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2201-light : 0.00 luxes"
+        ],
+        "2203": [
+            "MCS BACnet stack\n/TH_CO2_2203-temperature : 21.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2203-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2203-co2 : 491.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2203-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2203-light : 30.00 luxes"
+        ],
+        "2214": [
+            "MCS BACnet stack\n/TH_CO2_2214-temperature : 22.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2214-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2214-co2 : 750.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2214-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2214-light : 0.00 luxes"
+        ],
+        "2215": [
+            "MCS BACnet stack\n/TH_CO2_2215-temperature : 20.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2215-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2215-co2 : 493.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2215-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2215-light : 0.00 luxes"
+        ],
+        "2216": [
+            "MCS BACnet stack\n/TH_CO2_2216-temperature : 21.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2216-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2216-co2 : 647.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2216-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2216-light : 30.00 luxes"
+        ],
+        "308": [
+            "MCS BACnet stack\n/TH_CO2_308-temperature : 20.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_308-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_308-co2 : 440.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_308-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_308-light : 0.00 luxes"
+        ],
+        "310": [
+            "MCS BACnet stack\n/TH_CO2_310-temperature : 20.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_310-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_310-co2 : 494.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_310-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_310-light : 0.00 luxes"
+        ],
+        "313": [
+            "MCS BACnet stack\n/TH_CO2_313-temperature : 20.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_313-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_313-co2 : 443.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_313-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_313-light : 0.00 luxes"
+        ],
+        "314": [
+            "MCS BACnet stack\n/TH_CO2_314-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_314-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_314-co2 : 547.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_314-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_314-light : 0.00 luxes"
+        ],
+        "319": [
+            "MCS BACnet stack\n/TH_CO2_319-temperature : 19.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_319-humidity : 67.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_319-co2 : 541.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_319-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_319-light : 10.00 luxes"
+        ],
+        "321": [
+            "MCS BACnet stack\n/TH_CO2_321-temperature : 20.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_321-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_321-co2 : 478.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_321-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_321-light : 5.00 luxes"
+        ],
+        "407": [
+            "MCS BACnet stack\n/TH_CO2_407-temperature : 20.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_407-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_407-co2 : 548.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_407-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_407-light : 5.00 luxes"
+        ],
+        "408": [
+            "MCS BACnet stack\n/TH_CO2_408-temperature : 20.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_408-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_408-co2 : 571.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_408-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_408-light : 0.00 luxes"
+        ],
+        "410": [
+            "MCS BACnet stack\n/TH_CO2_410-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_410-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_410-co2 : 471.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_410-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_410-light : 0.00 luxes"
+        ],
+        "414": [
+            "MCS BACnet stack\n/TH_CO2_414-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_414-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_414-co2 : 487.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_414-motion : 1.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_414-light : 35.00 luxes"
+        ],
+        "419": [
+            "MCS BACnet stack\n/TH_CO2_419-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_419-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_419-co2 : 456.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_419-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_419-light : 0.00 luxes"
+        ],
+        "501": [
+            "MCS BACnet stack\n/TH_CO2_501-temperature : 21.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_501-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_501-co2 : 791.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_501-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_501-light : 50.00 luxes"
+        ],
+        "504": [
+            "MCS BACnet stack\n/TH_CO2_504-temperature : 20.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_504-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_504-co2 : 847.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_504-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_504-light : 25.00 luxes"
+        ],
+        "506": [
+            "MCS BACnet stack\n/TH_CO2_506-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_506-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_506-co2 : 496.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_506-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_506-light : 10.00 luxes"
+        ],
+        "1906": [
+            "MCS BACnet stack\n/TH_CO2_1906-temperature : 20.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1906-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1906-co2 : 611.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1906-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1906-light : 0.00 luxes"
+        ],
+        "1909": [
+            "MCS BACnet stack\n/TH_CO2_1909-temperature : 19.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1909-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1909-co2 : 665.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1909-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1909-light : 0.00 luxes"
+        ],
+        "1914": [
+            "MCS BACnet stack\n/TH_CO2_1914-temperature : 22.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1914-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1914-co2 : 608.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1914-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1914-light : 340.00 luxes"
+        ],
+        "1915": [
+            "MCS BACnet stack\n/TH_CO2_1915-temperature : 19.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1915-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1915-co2 : 613.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1915-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1915-light : 5.00 luxes"
+        ],
+        "2103": [
+            "MCS BACnet stack\n/TH_CO2_2103-temperature : 18.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2103-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2103-co2 : 541.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2103-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2103-light : 5.00 luxes"
+        ],
+        "2104": [
+            "MCS BACnet stack\n/TH_CO2_2104-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2104-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2104-co2 : 508.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2104-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2104-light : 5.00 luxes"
+        ],
+        "2108": [
+            "MCS BACnet stack\n/TH_CO2_2108-temperature : 19.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2108-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2108-co2 : 526.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2108-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2108-light : 35.00 luxes"
+        ],
+        "2110": [
+            "MCS BACnet stack\n/TH_CO2_2110-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2110-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2110-co2 : 515.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2110-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2110-light : 5.00 luxes"
+        ],
+        "2114": [
+            "MCS BACnet stack\n/TH_CO2_2114-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2114-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2114-co2 : 467.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2114-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2114-light : 0.00 luxes"
+        ],
+        "2115": [
+            "MCS BACnet stack\n/TH_CO2_2115-temperature : 19.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2115-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2115-co2 : 489.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2115-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2115-light : 5.00 luxes"
+        ],
+        "2116": [
+            "MCS BACnet stack\n/TH_CO2_2116-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2116-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2116-co2 : 500.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2116-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2116-light : 0.00 luxes"
+        ],
+        "2120": [
+            "MCS BACnet stack\n/TH_CO2_2120-temperature : 20.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2120-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2120-co2 : 774.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2120-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2120-light : 5.00 luxes"
+        ],
+        "2122": [
+            "MCS BACnet stack\n/TH_CO2_2122-temperature : 23.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2122-humidity : 52.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2122-co2 : 533.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2122-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2122-light : 270.00 luxes"
+        ],
+        "2204": [
+            "MCS BACnet stack\n/TH_CO2_2204-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2204-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2204-co2 : 498.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2204-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2204-light : 5.00 luxes"
+        ],
+        "2206": [
+            "MCS BACnet stack\n/TH_CO2_2206-temperature : 22.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2206-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2206-co2 : 501.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2206-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2206-light : 5.00 luxes"
+        ],
+        "2207": [
+            "MCS BACnet stack\n/TH_CO2_2207-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2207-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2207-co2 : 439.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2207-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2207-light : 5.00 luxes"
+        ],
+        "2208": [
+            "MCS BACnet stack\n/TH_CO2_2208-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2208-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2208-co2 : 556.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2208-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2208-light : 25.00 luxes"
+        ],
+        "2209": [
+            "MCS BACnet stack\n/TH_CO2_2209-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2209-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2209-co2 : 493.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2209-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2209-light : 5.00 luxes"
+        ],
+        "2212": [
+            "MCS BACnet stack\n/TH_CO2_2212-temperature : 21.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2212-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2212-co2 : 491.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2212-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2212-light : 0.00 luxes"
+        ],
+        "2219": [
+            "MCS BACnet stack\n/TH_CO2_2219-temperature : 16.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2219-humidity : 66.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2219-co2 : 726.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2219-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2219-light : 10.00 luxes"
+        ],
+        "2222": [
+            "MCS BACnet stack\n/TH_CO2_2222-temperature : 19.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2222-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2222-co2 : 544.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2222-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2222-light : 5.00 luxes"
+        ],
+        "2401": [
+            "MCS BACnet stack\n/TH_CO2_2401-temperature : 18.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2401-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2401-co2 : 527.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2401-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2401-light : 0.00 luxes"
+        ],
+        "2404": [
+            "MCS BACnet stack\n/TH_CO2_2404-temperature : 22.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2404-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2404-co2 : 1111.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2404-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2404-light : 320.00 luxes"
+        ],
+        "2416": [
+            "MCS BACnet stack\n/TH_CO2_2416-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2416-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2416-co2 : 601.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2416-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2416-light : 45.00 luxes"
+        ],
+        "317": [
+            "MCS BACnet stack\n/TH_CO2_317-temperature : 20.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_317-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_317-co2 : 515.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_317-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_317-light : 0.00 luxes"
+        ],
+        "701": [
+            "MCS BACnet stack\n/TH_CO2_701-temperature : 20.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_701-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_701-co2 : 762.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_701-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_701-light : 0.00 luxes"
+        ],
+        "702": [
+            "MCS BACnet stack\n/TH_CO2_702-temperature : 20.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_702-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_702-co2 : 587.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_702-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_702-light : 10.00 luxes"
+        ],
+        "703": [
+            "MCS BACnet stack\n/TH_CO2_703-temperature : 18.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_703-humidity : 66.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_703-co2 : 459.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_703-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_703-light : 15.00 luxes"
+        ],
+        "704": [
+            "MCS BACnet stack\n/TH_CO2_704-temperature : 19.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_704-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_704-co2 : 704.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_704-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_704-light : 10.00 luxes"
+        ],
+        "705": [
+            "MCS BACnet stack\n/TH_CO2_705-temperature : 21.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_705-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_705-co2 : 1037.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_705-motion : 1.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_705-light : 15.00 luxes"
+        ],
+        "706": [
+            "MCS BACnet stack\n/TH_CO2_706-temperature : 22.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_706-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_706-co2 : 582.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_706-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_706-light : 10.00 luxes"
+        ],
+        "707": [
+            "MCS BACnet stack\n/TH_CO2_707-temperature : 19.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_707-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_707-co2 : 587.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_707-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_707-light : 0.00 luxes"
+        ],
+        "708": [
+            "MCS BACnet stack\n/TH_CO2_708-temperature : 19.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_708-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_708-co2 : 580.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_708-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_708-light : 5.00 luxes"
+        ],
+        "709": [
+            "MCS BACnet stack\n/TH_CO2_709-temperature : 20.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_709-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_709-co2 : 662.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_709-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_709-light : 5.00 luxes"
+        ],
+        "710": [
+            "MCS BACnet stack\n/TH_CO2_710-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_710-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_710-co2 : 667.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_710-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_710-light : 0.00 luxes"
+        ],
+        "712": [
+            "MCS BACnet stack\n/TH_CO2_712-temperature : 21.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_712-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_712-co2 : 494.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_712-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_712-light : 0.00 luxes"
+        ],
+        "713": [
+            "MCS BACnet stack\n/TH_CO2_713-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_713-humidity : 73.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_713-co2 : 764.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_713-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_713-light : 0.00 luxes"
+        ],
+        "714": [
+            "MCS BACnet stack\n/TH_CO2_714-temperature : 22.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_714-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_714-co2 : 509.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_714-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_714-light : 5.00 luxes"
+        ],
+        "715": [
+            "MCS BACnet stack\n/TH_CO2_715-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_715-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_715-co2 : 580.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_715-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_715-light : 10.00 luxes"
+        ],
+        "716": [
+            "MCS BACnet stack\n/TH_CO2_716-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_716-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_716-co2 : 577.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_716-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_716-light : 15.00 luxes"
+        ],
+        "717": [
+            "MCS BACnet stack\n/TH_CO2_717-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_717-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_717-co2 : 662.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_717-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_717-light : 5.00 luxes"
+        ],
+        "718": [
+            "MCS BACnet stack\n/TH_CO2_718-temperature : 20.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_718-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_718-co2 : 430.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_718-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_718-light : 0.00 luxes"
+        ],
+        "719": [
+            "MCS BACnet stack\n/TH_CO2_719-temperature : 20.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_719-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_719-co2 : 491.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_719-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_719-light : 20.00 luxes"
+        ],
+        "720": [
+            "MCS BACnet stack\n/TH_CO2_720-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_720-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_720-co2 : 445.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_720-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_720-light : 5.00 luxes"
+        ],
+        "721": [
+            "MCS BACnet stack\n/TH_CO2_721-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_721-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_721-co2 : 723.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_721-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_721-light : 5.00 luxes"
+        ],
+        "722": [
+            "MCS BACnet stack\n/TH_CO2_722-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_722-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_722-co2 : 556.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_722-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_722-light : 10.00 luxes"
+        ],
+        "1103": [
+            "MCS BACnet stack\n/TH_CO2_1103-temperature : 19.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1103-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1103-co2 : 857.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1103-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1103-light : 45.00 luxes"
+        ],
+        "1107": [
+            "MCS BACnet stack\n/TH_CO2_1107-temperature : 17.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1107-humidity : 68.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1107-co2 : 690.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1107-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1107-light : 35.00 luxes"
+        ],
+        "1117": [
+            "MCS BACnet stack\n/TH_CO2_1117-temperature : 18.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1117-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1117-co2 : 743.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1117-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1117-light : 0.00 luxes"
+        ],
+        "1119": [
+            "MCS BACnet stack\n/TH_CO2_1119-temperature : 22.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1119-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1119-co2 : 717.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1119-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1119-light : 25.00 luxes"
+        ],
+        "1122": [
+            "MCS BACnet stack\n/TH_CO2_1122-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1122-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1122-co2 : 569.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1122-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1122-light : 50.00 luxes"
+        ],
+        "1208": [
+            "MCS BACnet stack\n/TH_CO2_1208-temperature : 23.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1208-humidity : 52.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1208-co2 : 487.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1208-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1208-light : 100.00 luxes"
+        ],
+        "1210": [
+            "MCS BACnet stack\n/TH_CO2_1210-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1210-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1210-co2 : 632.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1210-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1210-light : 0.00 luxes"
+        ],
+        "1213": [
+            "MCS BACnet stack\n/TH_CO2_1213-temperature : 20.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1213-humidity : 66.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1213-co2 : 557.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1213-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1213-light : 105.00 luxes"
+        ],
+        "1214": [
+            "MCS BACnet stack\n/TH_CO2_1214-temperature : 19.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1214-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1214-co2 : 535.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1214-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1214-light : 20.00 luxes"
+        ],
+        "1301": [
+            "MCS BACnet stack\n/TH_CO2_1301-temperature : 22.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1301-humidity : 68.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1301-co2 : 873.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1301-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1301-light : 0.00 luxes"
+        ],
+        "1302": [
+            "MCS BACnet stack\n/TH_CO2_1302-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1302-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1302-co2 : 891.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1302-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1302-light : 100.00 luxes"
+        ],
+        "1308": [
+            "MCS BACnet stack\n/TH_CO2_1308-temperature : 22.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1308-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1308-co2 : 428.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1308-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1308-light : 0.00 luxes"
+        ],
+        "1314": [
+            "MCS BACnet stack\n/TH_CO2_1314-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1314-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1314-co2 : 493.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1314-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1314-light : 50.00 luxes"
+        ],
+        "1316": [
+            "MCS BACnet stack\n/TH_CO2_1316-temperature : 20.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1316-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1316-co2 : 572.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1316-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1316-light : 0.00 luxes"
+        ],
+        "1319": [
+            "MCS BACnet stack\n/TH_CO2_1319-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1319-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1319-co2 : 718.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1319-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1319-light : 0.00 luxes"
+        ],
+        "1320": [
+            "MCS BACnet stack\n/TH_CO2_1320-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1320-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1320-co2 : 483.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1320-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1320-light : 0.00 luxes"
+        ],
+        "1502": [
+            "MCS BACnet stack\n/TH_CO2_1502-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1502-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1502-co2 : 774.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1502-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1502-light : 5.00 luxes"
+        ],
+        "1505": [
+            "MCS BACnet stack\n/TH_CO2_1505-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1505-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1505-co2 : 549.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1505-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1505-light : 20.00 luxes"
+        ],
+        "1506": [
+            "MCS BACnet stack\n/TH_CO2_1506-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1506-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1506-co2 : 1020.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1506-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1506-light : 5.00 luxes"
+        ],
+        "1507": [
+            "MCS BACnet stack\n/TH_CO2_1507-temperature : 21.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1507-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1507-co2 : 525.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1507-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1507-light : 0.00 luxes"
+        ],
+        "1509": [
+            "MCS BACnet stack\n/TH_CO2_1509-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1509-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1509-co2 : 534.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1509-motion : 1.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1509-light : 0.00 luxes"
+        ],
+        "1518": [
+            "MCS BACnet stack\n/TH_CO2_1518-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1518-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1518-co2 : 190.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1518-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1518-light : 5.00 luxes"
+        ],
+        "1604": [
+            "MCS BACnet stack\n/TH_CO2_1604-temperature : 22.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1604-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1604-co2 : 653.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1604-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1604-light : 5.00 luxes"
+        ],
+        "1605": [
+            "MCS BACnet stack\n/TH_CO2_1605-temperature : 22.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1605-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1605-co2 : 74.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1605-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1605-light : 105.00 luxes"
+        ],
+        "1608": [
+            "MCS BACnet stack\n/TH_CO2_1608-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1608-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1608-co2 : 681.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1608-motion : 1.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1608-light : 150.00 luxes"
+        ],
+        "1610": [
+            "MCS BACnet stack\n/TH_CO2_1610-temperature : 20.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1610-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1610-co2 : 830.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1610-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1610-light : 100.00 luxes"
+        ],
+        "1615": [
+            "MCS BACnet stack\n/TH_CO2_1615-temperature : 20.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1615-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1615-co2 : 535.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1615-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1615-light : 0.00 luxes"
+        ],
+        "1705": [
+            "MCS BACnet stack\n/TH_CO2_1705-temperature : 20.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1705-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1705-co2 : 682.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1705-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1705-light : 85.00 luxes"
+        ],
+        "1806": [
+            "MCS BACnet stack\n/TH_CO2_1806-temperature : 20.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1806-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1806-co2 : 549.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1806-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1806-light : 65.00 luxes"
+        ],
+        "1815": [
+            "MCS BACnet stack\n/TH_CO2_1815-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1815-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1815-co2 : 704.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1815-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1815-light : 0.00 luxes"
+        ],
+        "1905": [
+            "MCS BACnet stack\n/TH_CO2_1905-temperature : 22.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1905-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1905-co2 : 517.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1905-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1905-light : 125.00 luxes"
+        ],
+        "1913": [
+            "MCS BACnet stack\n/TH_CO2_1913-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1913-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1913-co2 : 593.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1913-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1913-light : 105.00 luxes"
+        ],
+        "1920": [
+            "MCS BACnet stack\n/TH_CO2_1920-temperature : 19.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1920-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1920-co2 : 468.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1920-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1920-light : 0.00 luxes"
+        ],
+        "1922": [
+            "MCS BACnet stack\n/TH_CO2_1922-temperature : 21.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1922-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1922-co2 : 452.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1922-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1922-light : 5.00 luxes"
+        ],
+        "2001": [
+            "MCS BACnet stack\n/TH_CO2_2001-temperature : 20.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2001-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2001-co2 : 454.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2001-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2001-light : 0.00 luxes"
+        ],
+        "2008": [
+            "MCS BACnet stack\n/TH_CO2_2008-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2008-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2008-co2 : 564.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2008-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2008-light : 0.00 luxes"
+        ],
+        "2017": [
+            "MCS BACnet stack\n/TH_CO2_2017-temperature : 22.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2017-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2017-co2 : 1000.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2017-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2017-light : 0.00 luxes"
+        ],
+        "2102": [
+            "MCS BACnet stack\n/TH_CO2_2102-temperature : 19.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2102-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2102-co2 : 866.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2102-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2102-light : 45.00 luxes"
+        ],
+        "2105": [
+            "MCS BACnet stack\n/TH_CO2_2105-temperature : 18.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2105-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2105-co2 : 1062.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2105-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2105-light : 0.00 luxes"
+        ],
+        "2106": [
+            "MCS BACnet stack\n/TH_CO2_2106-temperature : 18.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2106-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2106-co2 : 508.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2106-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2106-light : 55.00 luxes"
+        ],
+        "2107": [
+            "MCS BACnet stack\n/TH_CO2_2107-temperature : 20.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2107-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2107-co2 : 508.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2107-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2107-light : 0.00 luxes"
+        ],
+        "2112": [
+            "MCS BACnet stack\n/TH_CO2_2112-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2112-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2112-co2 : 510.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2112-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2112-light : 5.00 luxes"
+        ],
+        "2119": [
+            "MCS BACnet stack\n/TH_CO2_2119-temperature : 17.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2119-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2119-co2 : 541.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2119-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2119-light : 30.00 luxes"
+        ],
+        "2210": [
+            "MCS BACnet stack\n/TH_CO2_2210-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2210-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2210-co2 : 536.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2210-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2210-light : 0.00 luxes"
+        ],
+        "2213": [
+            "MCS BACnet stack\n/TH_CO2_2213-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2213-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2213-co2 : 303.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2213-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2213-light : 0.00 luxes"
+        ],
+        "2218": [
+            "MCS BACnet stack\n/TH_CO2_2218-temperature : 18.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2218-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2218-co2 : 1164.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2218-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2218-light : 0.00 luxes"
+        ],
+        "2221": [
+            "MCS BACnet stack\n/TH_CO2_2221-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2221-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2221-co2 : 494.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2221-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2221-light : 0.00 luxes"
+        ],
+        "2407": [
+            "MCS BACnet stack\n/TH_CO2_2407-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2407-humidity : 51.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2407-co2 : 572.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2407-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2407-light : 0.00 luxes"
+        ],
+        "2409": [
+            "MCS BACnet stack\n/TH_CO2_2409-temperature : 24.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2409-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2409-co2 : 875.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2409-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2409-light : 425.00 luxes"
+        ],
+        "2417": [
+            "MCS BACnet stack\n/TH_CO2_2417-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2417-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2417-co2 : 1501.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2417-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2417-light : 70.00 luxes"
+        ],
+        "2418": [
+            "MCS BACnet stack\n/TH_CO2_2418-temperature : 19.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2418-humidity : 50.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2418-co2 : 593.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2418-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2418-light : 5.00 luxes"
+        ],
+        "2420": [
+            "MCS BACnet stack\n/TH_CO2_2420-temperature : 20.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2420-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2420-co2 : 686.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2420-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2420-light : 35.00 luxes"
+        ],
+        "2118": [
+            "MCS BACnet stack\n/TH_CO2_2118-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2118-humidity : 52.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2118-co2 : 668.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2118-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2118-light : 5.00 luxes"
+        ],
+        "514": [
+            "MCS BACnet stack\n/TH_CO2_514-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_514-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_514-co2 : 509.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_514-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_514-light : 5.00 luxes"
+        ],
+        "1313": [
+            "MCS BACnet stack\n/TH_CO2_1313-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1313-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1313-co2 : 130.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1313-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1313-light : 0.00 luxes"
+        ],
+        "1503": [
+            "MCS BACnet stack\n/TH_CO2_1503-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1503-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1503-co2 : 603.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1503-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1503-light : 75.00 luxes"
+        ],
+        "1504": [
+            "MCS BACnet stack\n/TH_CO2_1504-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1504-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1504-co2 : 737.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1504-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1504-light : 20.00 luxes"
+        ],
+        "1516": [
+            "MCS BACnet stack\n/TH_CO2_1516-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1516-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1516-co2 : 615.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1516-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1516-light : 0.00 luxes"
+        ],
+        "1517": [
+            "MCS BACnet stack\n/TH_CO2_1517-temperature : 19.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1517-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1517-co2 : 1303.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1517-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1517-light : 0.00 luxes"
+        ],
+        "1519": [
+            "MCS BACnet stack\n/TH_CO2_1519-temperature : 22.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1519-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1519-co2 : 1131.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1519-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1519-light : 105.00 luxes"
+        ],
+        "1520": [
+            "MCS BACnet stack\n/TH_CO2_1520-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1520-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1520-co2 : 155.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1520-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1520-light : 0.00 luxes"
+        ],
+        "1522": [
+            "MCS BACnet stack\n/TH_CO2_1522-temperature : 20.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1522-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1522-co2 : 474.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1522-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1522-light : 15.00 luxes"
+        ],
+        "1609": [
+            "MCS BACnet stack\n/TH_CO2_1609-temperature : 20.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1609-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1609-co2 : 964.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1609-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1609-light : 5.00 luxes"
+        ],
+        "1612": [
+            "MCS BACnet stack\n/TH_CO2_1612-temperature : 22.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1612-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1612-co2 : 419.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1612-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1612-light : 50.00 luxes"
+        ],
+        "1813": [
+            "MCS BACnet stack\n/TH_CO2_1813-temperature : 23.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1813-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1813-co2 : 698.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1813-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1813-light : 105.00 luxes"
+        ],
+        "2217": [
+            "MCS BACnet stack\n/TH_CO2_2217-temperature : 18.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2217-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2217-co2 : 744.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2217-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2217-light : 0.00 luxes"
+        ],
+        "2220": [
+            "MCS BACnet stack\n/TH_CO2_2220-temperature : 20.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2220-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2220-co2 : 960.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2220-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2220-light : 5.00 luxes"
+        ],
+        "2403": [
+            "MCS BACnet stack\n/TH_CO2_2403-temperature : 23.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2403-humidity : 52.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2403-co2 : 586.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2403-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2403-light : 5.00 luxes"
+        ],
+        "2405": [
+            "MCS BACnet stack\n/TH_CO2_2405-temperature : 22.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2405-humidity : 48.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2405-co2 : 559.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2405-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2405-light : 0.00 luxes"
+        ],
+        "2406": [
+            "MCS BACnet stack\n/TH_CO2_2406-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2406-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2406-co2 : 724.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2406-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2406-light : 0.00 luxes"
+        ],
+        "2419": [
+            "MCS BACnet stack\n/TH_CO2_2419-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2419-humidity : 51.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2419-co2 : 550.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2419-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2419-light : 0.00 luxes"
+        ],
+        "2421": [
+            "MCS BACnet stack\n/TH_CO2_2421-temperature : 21.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2421-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2421-co2 : 503.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2421-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2421-light : 0.00 luxes"
+        ],
+        "601": [
+            "MCS BACnet stack\n/TH_CO2_601-temperature : 18.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_601-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_601-co2 : 798.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_601-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_601-light : 0.00 luxes"
+        ],
+        "602": [
+            "MCS BACnet stack\n/TH_CO2_602-temperature : 20.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_602-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_602-co2 : 687.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_602-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_602-light : 5.00 luxes"
+        ],
+        "603": [
+            "MCS BACnet stack\n/TH_CO2_603-temperature : 19.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_603-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_603-co2 : 861.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_603-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_603-light : 5.00 luxes"
+        ],
+        "604": [
+            "MCS BACnet stack\n/TH_CO2_604-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_604-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_604-co2 : 864.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_604-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_604-light : 10.00 luxes"
+        ],
+        "605": [
+            "MCS BACnet stack\n/TH_CO2_605-temperature : 20.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_605-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_605-co2 : 466.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_605-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_605-light : 25.00 luxes"
+        ],
+        "606": [
+            "MCS BACnet stack\n/TH_CO2_606-temperature : 21.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_606-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_606-co2 : 542.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_606-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_606-light : 10.00 luxes"
+        ],
+        "607": [
+            "MCS BACnet stack\n/TH_CO2_607-temperature : 20.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_607-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_607-co2 : 528.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_607-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_607-light : 0.00 luxes"
+        ],
+        "608": [
+            "MCS BACnet stack\n/TH_CO2_608-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_608-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_608-co2 : 784.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_608-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_608-light : 0.00 luxes"
+        ],
+        "609": [
+            "MCS BACnet stack\n/TH_CO2_609-temperature : 18.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_609-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_609-co2 : 832.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_609-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_609-light : 0.00 luxes"
+        ],
+        "610": [
+            "MCS BACnet stack\n/TH_CO2_610-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_610-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_610-co2 : 566.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_610-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_610-light : 0.00 luxes"
+        ],
+        "612": [
+            "MCS BACnet stack\n/TH_CO2_612-temperature : 20.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_612-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_612-co2 : 568.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_612-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_612-light : 5.00 luxes"
+        ],
+        "613": [
+            "MCS BACnet stack\n/TH_CO2_613-temperature : 22.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_613-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_613-co2 : 818.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_613-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_613-light : 5.00 luxes"
+        ],
+        "614": [
+            "MCS BACnet stack\n/TH_CO2_614-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_614-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_614-co2 : 548.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_614-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_614-light : 0.00 luxes"
+        ],
+        "615": [
+            "MCS BACnet stack\n/TH_CO2_615-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_615-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_615-co2 : 977.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_615-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_615-light : 0.00 luxes"
+        ],
+        "616": [
+            "MCS BACnet stack\n/TH_CO2_616-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_616-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_616-co2 : 708.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_616-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_616-light : 5.00 luxes"
+        ],
+        "617": [
+            "MCS BACnet stack\n/TH_CO2_617-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_617-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_617-co2 : 628.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_617-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_617-light : 5.00 luxes"
+        ],
+        "618": [
+            "MCS BACnet stack\n/TH_CO2_618-temperature : 20.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_618-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_618-co2 : 698.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_618-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_618-light : 0.00 luxes"
+        ],
+        "619": [
+            "MCS BACnet stack\n/TH_CO2_619-temperature : 19.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_619-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_619-co2 : 588.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_619-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_619-light : 15.00 luxes"
+        ],
+        "620": [
+            "MCS BACnet stack\n/TH_CO2_620-temperature : 19.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_620-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_620-co2 : 524.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_620-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_620-light : 15.00 luxes"
+        ],
+        "621": [
+            "MCS BACnet stack\n/TH_CO2_621-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_621-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_621-co2 : 448.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_621-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_621-light : 5.00 luxes"
+        ],
+        "622": [
+            "MCS BACnet stack\n/TH_CO2_622-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_622-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_622-co2 : 563.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_622-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_622-light : 0.00 luxes"
+        ],
+        "315": [
+            "MCS BACnet stack\n/TH_CO2_315-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_315-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_315-co2 : 476.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_315-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_315-light : 5.00 luxes"
+        ],
+        "418": [
+            "MCS BACnet stack\n/TH_CO2_418-temperature : 20.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_418-humidity : 69.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_418-co2 : 550.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_418-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_418-light : 0.00 luxes"
+        ],
+        "420": [
+            "MCS BACnet stack\n/TH_CO2_420-temperature : 20.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_420-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_420-co2 : 544.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_420-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_420-light : 5.00 luxes"
+        ],
+        "503": [
+            "MCS BACnet stack\n/TH_CO2_503-temperature : 20.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_503-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_503-co2 : 264.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_503-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_503-light : 30.00 luxes"
+        ],
+        "508": [
+            "MCS BACnet stack\n/TH_CO2_508-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_508-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_508-co2 : 362.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_508-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_508-light : 0.00 luxes"
+        ],
+        "513": [
+            "MCS BACnet stack\n/TH_CO2_513-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_513-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_513-co2 : 439.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_513-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_513-light : 0.00 luxes"
+        ],
+        "516": [
+            "MCS BACnet stack\n/TH_CO2_516-temperature : 20.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_516-humidity : 66.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_516-co2 : 1028.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_516-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_516-light : 35.00 luxes"
+        ],
+        "517": [
+            "MCS BACnet stack\n/TH_CO2_517-temperature : 20.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_517-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_517-co2 : 545.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_517-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_517-light : 0.00 luxes"
+        ],
+        "518": [
+            "MCS BACnet stack\n/TH_CO2_518-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_518-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_518-co2 : 38.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_518-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_518-light : 0.00 luxes"
+        ],
+        "519": [
+            "MCS BACnet stack\n/TH_CO2_519-temperature : 22.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_519-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_519-co2 : 508.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_519-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_519-light : 5.00 luxes"
+        ],
+        "520": [
+            "MCS BACnet stack\n/TH_CO2_520-temperature : 20.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_520-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_520-co2 : 514.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_520-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_520-light : 10.00 luxes"
+        ],
+        "521": [
+            "MCS BACnet stack\n/TH_CO2_521-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_521-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_521-co2 : 238.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_521-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_521-light : 25.00 luxes"
+        ],
+        "522": [
+            "MCS BACnet stack\n/TH_CO2_522-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_522-humidity : 68.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_522-co2 : 678.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_522-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_522-light : 15.00 luxes"
+        ],
+        "1108": [
+            "MCS BACnet stack\n/TH_CO2_1108-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1108-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1108-co2 : 629.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1108-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1108-light : 90.00 luxes"
+        ],
+        "1114": [
+            "MCS BACnet stack\n/TH_CO2_1114-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1114-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1114-co2 : 488.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1114-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1114-light : 65.00 luxes"
+        ],
+        "1115": [
+            "MCS BACnet stack\n/TH_CO2_1115-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1115-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1115-co2 : 604.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1115-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1115-light : 45.00 luxes"
+        ],
+        "1116": [
+            "MCS BACnet stack\n/TH_CO2_1116-temperature : 20.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1116-humidity : 62.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1116-co2 : 1011.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1116-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1116-light : 80.00 luxes"
+        ],
+        "1121": [
+            "MCS BACnet stack\n/TH_CO2_1121-temperature : 21.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1121-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1121-co2 : 742.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1121-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1121-light : 50.00 luxes"
+        ],
+        "1217": [
+            "MCS BACnet stack\n/TH_CO2_1217-temperature : 20.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1217-humidity : 64.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1217-co2 : 520.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1217-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1217-light : 0.00 luxes"
+        ],
+        "1401": [
+            "MCS BACnet stack\n/TH_CO2_1401-temperature : 19.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1401-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1401-co2 : 294.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1401-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1401-light : 35.00 luxes"
+        ],
+        "1402": [
+            "MCS BACnet stack\n/TH_CO2_1402-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1402-humidity : 66.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1402-co2 : 332.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1402-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1402-light : 40.00 luxes"
+        ],
+        "1403": [
+            "MCS BACnet stack\n/TH_CO2_1403-temperature : 22.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1403-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1403-co2 : 218.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1403-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1403-light : 0.00 luxes"
+        ],
+        "1404": [
+            "MCS BACnet stack\n/TH_CO2_1404-temperature : 22.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1404-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1404-co2 : 418.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1404-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1404-light : 0.00 luxes"
+        ],
+        "1405": [
+            "MCS BACnet stack\n/TH_CO2_1405-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1405-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1405-co2 : 248.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1405-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1405-light : 5.00 luxes"
+        ],
+        "1406": [
+            "MCS BACnet stack\n/TH_CO2_1406-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1406-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1406-co2 : 353.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1406-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1406-light : 0.00 luxes"
+        ],
+        "1407": [
+            "MCS BACnet stack\n/TH_CO2_1407-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1407-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1407-co2 : 147.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1407-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1407-light : 0.00 luxes"
+        ],
+        "1408": [
+            "MCS BACnet stack\n/TH_CO2_1408-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1408-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1408-co2 : 144.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1408-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1408-light : 0.00 luxes"
+        ],
+        "1409": [
+            "MCS BACnet stack\n/TH_CO2_1409-temperature : 22.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1409-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1409-co2 : 286.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1409-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1409-light : 0.00 luxes"
+        ],
+        "1418": [
+            "MCS BACnet stack\n/TH_CO2_1418-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1418-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1418-co2 : 441.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1418-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1418-light : 0.00 luxes"
+        ],
+        "1419": [
+            "MCS BACnet stack\n/TH_CO2_1419-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1419-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1419-co2 : 360.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1419-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1419-light : 30.00 luxes"
+        ],
+        "1420": [
+            "MCS BACnet stack\n/TH_CO2_1420-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1420-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1420-co2 : 209.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1420-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1420-light : 75.00 luxes"
+        ],
+        "1421": [
+            "MCS BACnet stack\n/TH_CO2_1421-temperature : 22.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1421-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1421-co2 : 351.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1421-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1421-light : 5.00 luxes"
+        ],
+        "1702": [
+            "MCS BACnet stack\n/TH_CO2_1702-temperature : 19.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1702-humidity : 67.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1702-co2 : 786.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1702-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1702-light : 90.00 luxes"
+        ],
+        "1703": [
+            "MCS BACnet stack\n/TH_CO2_1703-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1703-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1703-co2 : 609.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1703-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1703-light : 10.00 luxes"
+        ],
+        "1712": [
+            "MCS BACnet stack\n/TH_CO2_1712-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1712-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1712-co2 : 638.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1712-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1712-light : 55.00 luxes"
+        ],
+        "1713": [
+            "MCS BACnet stack\n/TH_CO2_1713-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1713-humidity : 61.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1713-co2 : 273.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1713-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1713-light : 0.00 luxes"
+        ],
+        "1714": [
+            "MCS BACnet stack\n/TH_CO2_1714-temperature : 21.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1714-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1714-co2 : 928.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1714-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1714-light : 0.00 luxes"
+        ],
+        "1717": [
+            "MCS BACnet stack\n/TH_CO2_1717-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1717-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1717-co2 : 302.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1717-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1717-light : 75.00 luxes"
+        ],
+        "1719": [
+            "MCS BACnet stack\n/TH_CO2_1719-temperature : 22.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1719-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1719-co2 : 722.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1719-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1719-light : 15.00 luxes"
+        ],
+        "1802": [
+            "MCS BACnet stack\n/TH_CO2_1802-temperature : 20.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1802-humidity : 66.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1802-co2 : 570.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1802-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1802-light : 5.00 luxes"
+        ],
+        "1809": [
+            "MCS BACnet stack\n/TH_CO2_1809-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1809-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1809-co2 : 141.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1809-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1809-light : 45.00 luxes"
+        ],
+        "1810": [
+            "MCS BACnet stack\n/TH_CO2_1810-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1810-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1810-co2 : 239.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1810-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1810-light : 40.00 luxes"
+        ],
+        "1812": [
+            "MCS BACnet stack\n/TH_CO2_1812-temperature : 20.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1812-humidity : 65.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1812-co2 : 893.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1812-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1812-light : 0.00 luxes"
+        ],
+        "1814": [
+            "MCS BACnet stack\n/TH_CO2_1814-temperature : 18.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1814-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1814-co2 : 604.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1814-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1814-light : 110.00 luxes"
+        ],
+        "1902": [
+            "MCS BACnet stack\n/TH_CO2_1902-temperature : 20.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1902-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1902-co2 : 157.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1902-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1902-light : 60.00 luxes"
+        ],
+        "1903": [
+            "MCS BACnet stack\n/TH_CO2_1903-temperature : 21.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1903-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1903-co2 : 74.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1903-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1903-light : 40.00 luxes"
+        ],
+        "1908": [
+            "MCS BACnet stack\n/TH_CO2_1908-temperature : 22.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1908-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1908-co2 : 179.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1908-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1908-light : 5.00 luxes"
+        ],
+        "1910": [
+            "MCS BACnet stack\n/TH_CO2_1910-temperature : 22.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1910-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1910-co2 : 187.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1910-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1910-light : 30.00 luxes"
+        ],
+        "1912": [
+            "MCS BACnet stack\n/TH_CO2_1912-temperature : 22.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1912-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1912-co2 : 110.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_1912-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1912-light : 5.00 luxes"
+        ],
+        "2003": [
+            "MCS BACnet stack\n/TH_CO2_2003-temperature : 22.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2003-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2003-co2 : 595.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2003-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2003-light : 70.00 luxes"
+        ],
+        "2006": [
+            "MCS BACnet stack\n/TH_CO2_2006-temperature : 19.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2006-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2006-co2 : 569.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2006-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2006-light : 0.00 luxes"
+        ],
+        "2009": [
+            "MCS BACnet stack\n/TH_CO2_2009-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2009-humidity : 57.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2009-co2 : 649.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2009-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2009-light : 5.00 luxes"
+        ],
+        "2013": [
+            "MCS BACnet stack\n/TH_CO2_2013-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2013-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2013-co2 : 185.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2013-motion : 1.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2013-light : 5.00 luxes"
+        ],
+        "2014": [
+            "MCS BACnet stack\n/TH_CO2_2014-temperature : 22.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2014-humidity : 53.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2014-co2 : 73.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2014-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2014-light : 0.00 luxes"
+        ],
+        "2015": [
+            "MCS BACnet stack\n/TH_CO2_2015-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2015-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2015-co2 : 90.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2015-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2015-light : 5.00 luxes"
+        ],
+        "2016": [
+            "MCS BACnet stack\n/TH_CO2_2016-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2016-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2016-co2 : 695.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2016-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2016-light : 0.00 luxes"
+        ],
+        "2109": [
+            "MCS BACnet stack\n/TH_CO2_2109-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2109-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2109-co2 : 507.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2109-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2109-light : 0.00 luxes"
+        ],
+        "2113": [
+            "MCS BACnet stack\n/TH_CO2_2113-temperature : 21.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2113-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2113-co2 : 499.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2113-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2113-light : 0.00 luxes"
+        ],
+        "2121": [
+            "MCS BACnet stack\n/TH_CO2_2121-temperature : 22.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2121-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2121-co2 : 76.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2121-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2121-light : 5.00 luxes"
+        ],
+        "2308": [
+            "MCS BACnet stack\n/TH_CO2_2308-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2308-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2308-co2 : 38.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2308-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2308-light : 30.00 luxes"
+        ],
+        "2309": [
+            "MCS BACnet stack\n/TH_CO2_2309-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2309-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2309-co2 : 55.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2309-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2309-light : 0.00 luxes"
+        ],
+        "2310": [
+            "MCS BACnet stack\n/TH_CO2_2310-temperature : 21.20 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2310-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2310-co2 : 44.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2310-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2310-light : 5.00 luxes"
+        ],
+        "2312": [
+            "MCS BACnet stack\n/TH_CO2_2312-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2312-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2312-co2 : 46.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2312-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2312-light : 0.00 luxes"
+        ],
+        "2313": [
+            "MCS BACnet stack\n/TH_CO2_2313-temperature : 21.70 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2313-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2313-co2 : 62.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2313-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2313-light : 5.00 luxes"
+        ],
+        "2314": [
+            "MCS BACnet stack\n/TH_CO2_2314-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2314-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2314-co2 : 51.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2314-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2314-light : 15.00 luxes"
+        ],
+        "2315": [
+            "MCS BACnet stack\n/TH_CO2_2315-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2315-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2315-co2 : 68.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2315-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2315-light : 5.00 luxes"
+        ],
+        "2316": [
+            "MCS BACnet stack\n/TH_CO2_2316-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2316-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2316-co2 : 121.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2316-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2316-light : 5.00 luxes"
+        ],
+        "2317": [
+            "MCS BACnet stack\n/TH_CO2_2317-temperature : 21.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2317-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2317-co2 : 155.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2317-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2317-light : 0.00 luxes"
+        ],
+        "2318": [
+            "MCS BACnet stack\n/TH_CO2_2318-temperature : 20.90 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2318-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2318-co2 : 166.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2318-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2318-light : 0.00 luxes"
+        ],
+        "2319": [
+            "MCS BACnet stack\n/TH_CO2_2319-temperature : 20.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2319-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2319-co2 : 72.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2319-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2319-light : 55.00 luxes"
+        ],
+        "2320": [
+            "MCS BACnet stack\n/TH_CO2_2320-temperature : 21.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2320-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2320-co2 : 156.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2320-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2320-light : 55.00 luxes"
+        ],
+        "2321": [
+            "MCS BACnet stack\n/TH_CO2_2321-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2321-humidity : 55.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2321-co2 : 57.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2321-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2321-light : 5.00 luxes"
+        ],
+        "2322": [
+            "MCS BACnet stack\n/TH_CO2_2322-temperature : 21.80 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2322-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2322-co2 : 51.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2322-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2322-light : 35.00 luxes"
+        ],
+        "2422": [
+            "MCS BACnet stack\n/TH_CO2_2422-temperature : 22.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_2422-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_2422-co2 : 432.00 partsPerMillion",
+            "MCS BACnet stack\n/TH_CO2_2422-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_2422-light : 250.00 luxes"
+        ],
+        "1001": [
+            "MCS BACnet stack\n/TH_CO2_1001-humidity : 59.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1001-light : 0.00 luxes",
+            "MCS BACnet stack\n/TH_CO2_1001-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1001-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1001-vdd : 3679.00 millivolts"
+        ],
+        "1002": [
+            "MCS BACnet stack\n/TH_CO2_1002-humidity : 60.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1002-light : 0.00 luxes",
+            "MCS BACnet stack\n/TH_CO2_1002-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1002-temperature : 21.40 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1002-vdd : 3677.00 millivolts"
+        ],
+        "1003": [
+            "MCS BACnet stack\n/TH_CO2_1003-humidity : 58.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1003-light : 20.00 luxes",
+            "MCS BACnet stack\n/TH_CO2_1003-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1003-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1003-vdd : 3675.00 millivolts"
+        ],
+        "1004": [
+            "MCS BACnet stack\n/TH_CO2_1004-humidity : 51.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1004-light : 20.00 luxes",
+            "MCS BACnet stack\n/TH_CO2_1004-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1004-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1004-vdd : 3670.00 millivolts"
+        ],
+        "1005": [
+            "MCS BACnet stack\n/TH_CO2_1005-humidity : 56.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1005-light : 0.00 luxes",
+            "MCS BACnet stack\n/TH_CO2_1005-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1005-temperature : 22.30 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1005-vdd : 3685.00 millivolts"
+        ],
+        "1006": [
+            "MCS BACnet stack\n/TH_CO2_1006-humidity : 54.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1006-light : 40.00 luxes",
+            "MCS BACnet stack\n/TH_CO2_1006-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1006-temperature : 22.60 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1006-vdd : 3679.00 millivolts"
+        ],
+        "1013": [
+            "MCS BACnet stack\n/TH_CO2_1013-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1013-light : 5.00 luxes",
+            "MCS BACnet stack\n/TH_CO2_1013-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1013-temperature : 22.00 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1013-vdd : 3679.00 millivolts"
+        ],
+        "1016": [
+            "MCS BACnet stack\n/TH_CO2_1016-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1016-light : 5.00 luxes",
+            "MCS BACnet stack\n/TH_CO2_1016-motion : 2.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1016-temperature : 21.10 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1016-vdd : 3677.00 millivolts"
+        ],
+        "1021": [
+            "MCS BACnet stack\n/TH_CO2_1021-humidity : 63.00 percentRelativeHumidity",
+            "MCS BACnet stack\n/TH_CO2_1021-light : 25.00 luxes",
+            "MCS BACnet stack\n/TH_CO2_1021-motion : 0.00 noUnits",
+            "MCS BACnet stack\n/TH_CO2_1021-temperature : 21.50 degreesCelsius",
+            "MCS BACnet stack\n/TH_CO2_1021-vdd : 3679.00 millivolts"
+        ]
+    }
+}
