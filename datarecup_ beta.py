@@ -273,30 +273,32 @@ while True:
         while (len(cmds_list)<w):
             cmds_list = get_cmds(cmds_list)
 
-    if len(occupation_list)<(96):
+    if len(occupation_list)<(192):
         print("padding occupation")
-        while (len(occupation_list)<(96)):
+        while (len(occupation_list)<(192)):
             occupation_list = get_occupation(occupation_list)
-    if len(True_occupation_list)<(96):
+
+
+    if len(True_occupation_list)<(192):
         print("padding occupation")
-        while (len(True_occupation_list)<(96)):
+        while (len(True_occupation_list)<(192)):
             True_occupation_list = get_true_occupation(True_occupation_list)
 
-    if len(temp_list)<48:
+    if len(temp_list)<72:
         print("padding temp")
-        while (len(temp_list)<48):
+        while (len(temp_list)<72):
             temp_list = get_temp(temp_list)
-    if len(gaz)<192:
+    if len(gaz)<288:
         print("padding gaz")
-        while (len(gaz)<192):
+        while (len(gaz)<288):
             gaz = get_gaz_conso(gaz)
-    if len(elec)<192:
+    if len(elec)<288:
         print("padding elec")
-        while (len(elec)<192):
+        while (len(elec)<288):
             elec = get_elec_conso(elec)
-    if len(water)<192:
+    if len(water)<288:
         print("padding water")
-        while (len(water)<192):
+        while (len(water)<288):
             water = get_water_conso(water)
     t2 = datetime.datetime.today()
     if (t2-t1)>=min:

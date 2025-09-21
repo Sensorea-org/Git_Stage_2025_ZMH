@@ -116,28 +116,44 @@ def plot_trend(param,names,trend,bornes):
     if axes[1]=="%":
         X = [0,100]
     if axes[1]=="dd":
-        X = [0,25]
+        X=[0,25]
     if axes[1]=="cdd":
-        X = [0,3]
-    X = np.linspace(min(X),max(X),1000)
-
+        X = [0, 20]
+    X = np.linspace(min(X),max(X),500)
+    n = (max(X)-min(X))/500
+    for borne in bornes:
+        if borne[0]!=0:
+            x1 = [x for x in X if x < borne[1]]
+            x2 = [x for x in X if x > borne[0]]
+            integ = borne[1]
+            while integ<borne[0]:
+                add = np.linspace(integ,borne[0],12)
+                for k in add:
+                    x1.append(k)
+                integ+=n
+            for k in x2:
+                x1.append(k)
+            X = x1
     trend_dic =[]
     segment_Bench = []
     for i in range(len(X)):
         segment_Bench.append([X[i],A_Bench * X[i] + B_Bench])
     trend_dic.append(segment_Bench)
+
     for j in range(len(param)):
         trend_actual = []
         a,b = param[j]
+        temp = []
         for i in range(len(X)):
             y_i = a*X[i] + b
             x_i = X[i]
             if bornes[j][1]<=x_i<=bornes[j][0]:
-                trend_actual.append([x_i,y_i])
+                if x_i not in temp:
+                    temp.append(x_i)
+                    trend_actual.append([x_i,y_i])
 
         trend_dic.append(trend_actual)
 
-    X = X.tolist()
     options = {
         "title": {
             "text": data[trend]["title"],
@@ -384,5 +400,8 @@ def readandwrite(dataset,path ="./data/trends.json",pw=19,fw=1):
     path = savefile(input,abs(chng),pw)
     return path
 def degres_heure_glissants(temperatures, t_base, w):
-    dh_glissant = sum(t_base - t for t in temperatures)
+    dh_glissant = 0
+    for i in range(w):
+        if t_base - temperatures[(-w+i)]>0:
+            dh_glissant += t_base - temperatures[(-w+i)]
     return dh_glissant / w

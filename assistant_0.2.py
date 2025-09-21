@@ -48,7 +48,7 @@ def _main_():
     clf = joblib.load("./modele_multioutput_classification.pkl")
     reg = joblib.load("./modele_multioutput_regression.pkl")
     # import fichier json
-    with open("./data/trends_TH - Copie.json", "r") as f:
+    with open("./data/trends_TH.json", "r") as f:
         data_loaded = json.load(f)
     data_room = data_loaded["rooms"]
 
@@ -89,44 +89,67 @@ def _main_():
     conso = conso_gaz[::4]
     dd = []
     cdd = []
-    l = 12
-    for i in range(l):
-        temp = degres_heure_glissants(data_loaded["temp_ext"][i:i + l], 15, l)
-        if temp<0:
-            temp = 0
-        dd.append(temp)
-        temp = -degres_heure_glissants(data_loaded["temp_ext"][i:i + l], 18, l)
-        if temp < 0:
-            temp = 0
-        cdd.append(temp)
-
+    l = 24
+    for i in range(len(data_loaded["temp_ext"])-l):
+        dd.append(degres_heure_glissants(data_loaded["temp_ext"][i:i+l], 15, l))
+        inv_temp = [-t for t in data_loaded["temp_ext"][i:i+l]]
+        cdd.append(degres_heure_glissants(inv_temp, -18, l))
     c = [(conso[i]-conso[i-l])*(2) for i in range(l,len(conso),1)]
-    bcg = [[max(dd), min(dd)]]
+    ddp = dd[-(2*l):-l]
+    dd = dd[-l:]
+    cddp = cdd[-(2*l):-l]
+    cdd = cdd[-l:]
+    bcg = [[max(dd), min(dd)],[max(ddp), min(ddp)]]
+    cp = c[-(2*l):-l]
+    c = c[-l:]
 
     try:
         ag,bg = mk_trend(c,dd)
 
+
     except:
         ag=0
         bg=float(np.mean(c))
+    try:
+        agp,bgp = mk_trend(cp,ddp)
+
+
+    except:
+        agp=0
+        bgp=float(np.mean(cp))
 
     # dico data water
     conso = np.array(conso_water)[::4]
     c = [(conso[i] - conso[i - l])/((10)/(2)) for i in range(l, len(conso), 1)]
 
-    occ_data = data_loaded["occupation_list"][::4][-l:]
-    occ_true_data = data_loaded["True_occupation_list"][::4][-l:]
+    cp = c[-(2 * l):-l]
+    c = c[-l:]
+
+    occ_data = data_loaded["occupation_list"][::4]
+    occ_data_p = occ_data[-(2 * l):-l]
+    occ_data = occ_data[-l:]
+
+    occ_true_data = data_loaded["True_occupation_list"][::4]
+    occ_true_data_p = occ_true_data[-(2 * l):-l]
+    occ_true_data = occ_true_data[-l:]
+
     aw, bw = mk_trend(c,occ_data)
     awt, bwt = mk_trend(c,occ_true_data)
-    bcw = [[max(occ_data), min(occ_data)],[max(occ_true_data), min(occ_true_data)]]
+    awp, bwp = mk_trend(cp, occ_data_p)
+    awtp, bwtp = mk_trend(cp, occ_true_data_p)
 
+    bcw = [[max(occ_data), min(occ_data)],[max(occ_true_data), min(occ_true_data)],[max(occ_data_p), min(occ_data_p)],[max(occ_true_data_p), min(occ_true_data_p)]]
 
     # conso elec
     conso = np.array(conso_elec)[::4]
     c = [(conso[i] - conso[i - l])/((1000)/(2)) for i in range(l, len(conso), 1)]
+    cp = c[-(2 * l):-l]
+    c = c[-l:]
     bce = bcw
     ae, be = mk_trend(c,occ_data)
     aet,bet = mk_trend(c,occ_true_data)
+    aep, bep = mk_trend(cp,occ_data_p)
+    aetp,betp = mk_trend(cp,occ_true_data_p)
 
     try:
         aedd,bedd = mk_trend(c,dd)
@@ -136,12 +159,26 @@ def _main_():
         bedd=float(np.mean(c))
 
     try:
+        aeddp, beddp = mk_trend(cp, ddp)
+
+    except:
+        aeddp = 0
+        beddp = float(np.mean(cp))
+
+    try:
         aecdd,becdd = mk_trend(c,cdd)
 
     except:
         aecdd=0
         becdd=float(np.mean(c))
-    bcecdd = [[max(cdd),min(cdd)]]
+
+    try:
+        aecddp,becddp = mk_trend(cp,cddp)
+
+    except:
+        aecddp=0
+        becddp=float(np.mean(cp))
+    bcecdd = [[max(cdd),min(cdd)],[max(cddp),min(cddp)]]
 
 
     # création des labels de commandes
@@ -311,7 +348,7 @@ def _main_():
         }
     }
 
-    model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-mpnet-base-v2")
+    model = SentenceTransformer("models/paraphrase-multilingual-mpnet-base-v2")
     clf_T = joblib.load("modele_LLM_SVC.pkl")
 
     def prediction_T(input, model, clf_T):
@@ -330,15 +367,15 @@ def _main_():
         with page1:
             st.header("Trends")
             st.subheader("trend : gaz consumption")
-            plot_trend([(ag, bg)], ["actual"], "gaz", bcg)
-
+            plot_trend([(ag, bg),(agp,bgp)], ["actual","past"], "gaz", bcg)
             st.subheader("trend : water consumption")
-            plot_trend([(aw, bw), (awt, bwt)], ["actual reservation", "actual true occ"], "water", bcw)
-            st.subheader("trend : electricity consumption")
-            plot_trend([(ae, be), (aet, bet)], ["actual", "actual true occ"], "elec", bce)
-            plot_trend([(aedd,bedd)], ["actual"], "elec_dd", bcg)
-            plot_trend([(aecdd,becdd)], ["actual"], "elec_cdd", bcecdd)
+            plot_trend([(aw, bw), (awt, bwt),(awp, bwp), (awtp, bwtp)], ["actual reservation", "actual true occ","past reservation", "past true occ"], "water", bcw)
 
+            st.subheader("trend : electricity consumption")
+            plot_trend([(ae, be), (aet, bet),(aep, bep), (aetp, betp)], ["actual reservation", "actual true occ","past reservation", "past true occ"], "elec", bce)
+
+            plot_trend([(aedd,bedd),(aeddp,beddp)], ["actual","past"], "elec_dd", bcg)
+            plot_trend([(aecdd,becdd),(aecddp,becddp)], ["actual","past"], "elec_cdd", bcecdd)
         with page2:
             st.header("Decision Trees")
             st.header("Results")
@@ -481,15 +518,16 @@ def _main_():
 
         with page1:
             st.header("Trends")
-
             st.subheader("trend : gaz consumption")
-            plot_trend([(ag, bg)], ["actual"], "gaz",bcg)
-
+            plot_trend([(ag, bg)], ["actual"], "gaz", bcg)
             st.subheader("trend : water consumption")
-            plot_trend([(aw, bw),(awt, bwt)], ["actual reservation","actual true occ"], "water", bcw)
+            plot_trend([(aw, bw), (awt, bwt)], ["actual reservation", "actual true occ"], "water", bcw)
 
             st.subheader("trend : electricity consumption")
-            plot_trend([(ae, be),(aet, bet)], ["actual","actual true occ"], "elec", bce)
+            plot_trend([(ae, be), (aet, bet)], ["actual", "actual true occ"], "elec", bce)
+
+            plot_trend([(aedd,bedd)], ["acctual"], "elec_dd", bcg)
+            plot_trend([(aecdd,becdd)], ["actual"], "elec_cdd", bcecdd)
             # fonction toute précooked pour rajouter une courbe il suffit de rajouter le nome et les paramètres dans la liste exemple:
         with page2:
             st.header("Decision Trees")
